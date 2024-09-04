@@ -1,22 +1,20 @@
-SVI Theme: Overall SVI; Overall SVI (Percentile); NaturalBreaks
-Data downloaded on 4-September-2024
 County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Percentile
 56039,Teton County,Wyoming,4.4,0.1127
 30031,Gallatin County,Montana,4.7,0.0427
 53055,San Juan County,Washington,4.7,0.0863
-08117,Summit County,Colorado,5.1,0.0707
+8117,Summit County,Colorado,5.1,0.0707
 16013,Blaine County,Idaho,5.1,0.3239
-08035,Douglas County,Colorado,5.2,0.015
-08013,Boulder County,Colorado,5.3,0.1704
-08067,La Plata County,Colorado,5.5,0.1086
+8035,Douglas County,Colorado,5.2,0.015
+8013,Boulder County,Colorado,5.3,0.1704
+8067,La Plata County,Colorado,5.5,0.1086
 45013,Beaufort County,South Carolina,5.5,0.4006
 49043,Summit County,Utah,5.6,0.05
-08015,Chaffee County,Colorado,5.7,0.2389
+8015,Chaffee County,Colorado,5.7,0.2389
 30057,Madison County,Montana,5.7,0.1726
 50025,Windham County,Vermont,5.7,0.3054
 56011,Crook County,Wyoming,5.7,0.0328
-06057,Nevada County,California,5.8,0.2045
-08037,Eagle County,Colorado,5.8,0.1369
+6057,Nevada County,California,5.8,0.2045
+8037,Eagle County,Colorado,5.8,0.1369
 30027,Fergus County,Montana,5.8,0.2376
 41003,Benton County,Oregon,5.8,0.349
 55129,Washburn County,Wisconsin,5.8,0.108
@@ -25,28 +23,28 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 50007,Chittenden County,Vermont,5.9,0.1831
 55025,Dane County,Wisconsin,5.9,0.1688
 55069,Lincoln County,Wisconsin,5.9,0.1013
-08059,Jefferson County,Colorado,6,0.0627
+8059,Jefferson County,Colorado,6,0.0627
 20131,Nemaha County,Kansas,6,0.0962
 33009,Grafton County,New Hampshire,6,0.1882
 35028,Los Alamos County,New Mexico,6,0.0248
 50001,Addison County,Vermont,6,0.0965
 55055,Jefferson County,Wisconsin,6,0.1854
-06041,Marin County,California,6.1,0.2701
-06061,Placer County,California,6.1,0.1519
+6041,Marin County,California,6.1,0.2701
+6061,Placer County,California,6.1,0.1519
 19141,O&#39;brien County,Iowa,6.1,0.2322
 23015,Lincoln County,Maine,6.1,0.1143
 30007,Broadwater County,Montana,6.1,0.042
 35049,Santa Fe County,New Mexico,6.1,0.5255
 38045,Lamoure County,North Dakota,6.1,0.0443
-04025,Yavapai County,Arizona,6.2,0.521
-09001,Fairfield County,Connecticut,6.2,0.4497
+4025,Yavapai County,Arizona,6.2,0.521
+9001,Fairfield County,Connecticut,6.2,0.4497
 31083,Harlan County,Nebraska,6.2,0.1239
 34019,Hunterdon County,New Jersey,6.2,0.0264
 41017,Deschutes County,Oregon,6.2,0.1637
 44005,Newport County,Rhode Island,6.2,0.179
 51013,Arlington County,Virginia,6.2,0.1401
 51059,Fairfax County,Virginia,6.2,0.1876
-09005,Litchfield County,Connecticut,6.3,0.0818
+9005,Litchfield County,Connecticut,6.3,0.0818
 19037,Chickasaw County,Iowa,6.3,0.0599
 19077,Guthrie County,Iowa,6.3,0.122
 25015,Hampshire County,Massachusetts,6.3,0.2325
@@ -63,10 +61,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55035,Eau Claire County,Wisconsin,6.3,0.2175
 56019,Johnson County,Wyoming,6.3,0.1774
 56029,Park County,Wyoming,6.3,0.0659
-06017,El Dorado County,California,6.4,0.1838
-08014,Broomfield County,Colorado,6.4,0.049
-08045,Garfield County,Colorado,6.4,0.351
-08069,Larimer County,Colorado,6.4,0.1194
+6017,El Dorado County,California,6.4,0.1838
+8014,Broomfield County,Colorado,6.4,0.049
+8045,Garfield County,Colorado,6.4,0.351
+8069,Larimer County,Colorado,6.4,0.1194
 23009,Hancock County,Maine,6.4,0.193
 23013,Knox County,Maine,6.4,0.1475
 24031,Montgomery County,Maryland,6.4,0.3255
@@ -79,9 +77,9 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 36079,Putnam County,New York,6.4,0.0812
 55089,Ozaukee County,Wisconsin,6.4,0.0134
 56027,Niobrara County,Wyoming,6.4,0.336
-02068,Denali Borough,Alaska,6.5,0.101
-08093,Park County,Colorado,6.5,0.0006
-08097,Pitkin County,Colorado,6.5,0.0656
+2068,Denali Borough,Alaska,6.5,0.101
+8093,Park County,Colorado,6.5,0.0006
+8097,Pitkin County,Colorado,6.5,0.0656
 16085,Valley County,Idaho,6.5,0.0882
 20081,Haskell County,Kansas,6.5,0.4115
 25007,Dukes County,Massachusetts,6.5,0.0096
@@ -99,8 +97,8 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51061,Fauquier County,Virginia,6.5,0.0287
 53033,King County,Washington,6.5,0.2854
 55097,Portage County,Wisconsin,6.5,0.1653
-08029,Delta County,Colorado,6.6,0.6866
-08049,Grand County,Colorado,6.6,0.0987
+8029,Delta County,Colorado,6.6,0.6866
+8049,Grand County,Colorado,6.6,0.0987
 16055,Kootenai County,Idaho,6.6,0.2328
 19059,Dickinson County,Iowa,6.6,0.0917
 19075,Grundy County,Iowa,6.6,0.0038
@@ -127,10 +125,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55127,Walworth County,Wisconsin,6.6,0.2688
 55137,Waushara County,Wisconsin,6.6,0.3653
 56035,Sublette County,Wyoming,6.6,0.0293
-05089,Marion County,Arkansas,6.7,0.5175
-06055,Napa County,California,6.7,0.5051
-08031,Denver County,Colorado,6.7,0.4197
-08119,Teller County,Colorado,6.7,0.0729
+5089,Marion County,Arkansas,6.7,0.5175
+6055,Napa County,California,6.7,0.5051
+8031,Denver County,Colorado,6.7,0.4197
+8119,Teller County,Colorado,6.7,0.0729
 16029,Caribou County,Idaho,6.7,0.1917
 17043,Dupage County,Illinois,6.7,0.1611
 17049,Effingham County,Illinois,6.7,0.199
@@ -159,10 +157,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 53057,Skagit County,Washington,6.7,0.5382
 55075,Marinette County,Wisconsin,6.7,0.2971
 56001,Albany County,Wyoming,6.7,0.2494
-02195,Petersburg Borough,Alaska,6.8,0.665
-06087,Santa Cruz County,California,6.8,0.543
-08103,Rio Blanco County,Colorado,6.8,0.3401
-08107,Routt County,Colorado,6.8,0.0634
+2195,Petersburg Borough,Alaska,6.8,0.665
+6087,Santa Cruz County,California,6.8,0.543
+8103,Rio Blanco County,Colorado,6.8,0.3401
+8107,Routt County,Colorado,6.8,0.0634
 16037,Custer County,Idaho,6.8,0.4369
 17015,Carroll County,Illinois,6.8,0.1682
 19053,Decatur County,Iowa,6.8,0.6822
@@ -202,13 +200,13 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55103,Richland County,Wisconsin,6.8,0.3073
 55139,Winnebago County,Wisconsin,6.8,0.1608
 56017,Hot Springs County,Wyoming,6.8,0.1229
-02110,Juneau City and Borough,Alaska,6.9,0.2987
-04011,Greenlee County,Arizona,6.9,0.6188
-06009,Calaveras County,California,6.9,0.235
-06103,Tehama County,California,6.9,0.9624
-08047,Gilpin County,Colorado,6.9,0.0022
-08073,Lincoln County,Colorado,6.9,0.4857
-08113,San Miguel County,Colorado,6.9,0.0331
+2110,Juneau City and Borough,Alaska,6.9,0.2987
+4011,Greenlee County,Arizona,6.9,0.6188
+6009,Calaveras County,California,6.9,0.235
+6103,Tehama County,California,6.9,0.9624
+8047,Gilpin County,Colorado,6.9,0.0022
+8073,Lincoln County,Colorado,6.9,0.4857
+8113,San Miguel County,Colorado,6.9,0.0331
 15009,Maui County,Hawaii,6.9,0.3879
 16077,Power County,Idaho,6.9,0.5162
 16081,Teton County,Idaho,6.9,0.1344
@@ -271,9 +269,9 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55029,Door County,Wisconsin,6.9,0.0557
 55049,Iowa County,Wisconsin,6.9,0.0131
 55141,Wood County,Wisconsin,6.9,0.1535
-08005,Arapahoe County,Colorado,7,0.2662
-08041,El Paso County,Colorado,7,0.3927
-08091,Ouray County,Colorado,7,0.0239
+8005,Arapahoe County,Colorado,7,0.2662
+8041,El Paso County,Colorado,7,0.3927
+8091,Ouray County,Colorado,7,0.0239
 16047,Gooding County,Idaho,7,0.7076
 17007,Boone County,Illinois,7,0.4697
 17023,Clark County,Illinois,7,0.2073
@@ -350,12 +348,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55043,Grant County,Wisconsin,7,0.1939
 55065,Lafayette County,Wisconsin,7,0.1596
 55131,Washington County,Wisconsin,7,0.0099
-02100,Haines Borough,Alaska,7.1,0.207
-08033,Dolores County,Colorado,7.1,0.1516
-08051,Gunnison County,Colorado,7.1,0.1392
-08053,Hinsdale County,Colorado,7.1,0.0624
-08061,Kiowa County,Colorado,7.1,0.3188
-08115,Sedgwick County,Colorado,7.1,0.6936
+2100,Haines Borough,Alaska,7.1,0.207
+8033,Dolores County,Colorado,7.1,0.1516
+8051,Gunnison County,Colorado,7.1,0.1392
+8053,Hinsdale County,Colorado,7.1,0.0624
+8061,Kiowa County,Colorado,7.1,0.3188
+8115,Sedgwick County,Colorado,7.1,0.6936
 15007,Kauai County,Hawaii,7.1,0.3099
 16001,Ada County,Idaho,7.1,0.1373
 16025,Camas County,Idaho,7.1,0.1338
@@ -460,18 +458,18 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55077,Marquette County,Wisconsin,7.1,0.2596
 55091,Pepin County,Wisconsin,7.1,0.1019
 55121,Trempealeau County,Wisconsin,7.1,0.2812
-02020,Anchorage Municipality,Alaska,7.2,0.4602
-02105,Hoonah-Angoon Census Area,Alaska,7.2,0.4178
-06011,Colusa County,California,7.2,0.7436
-06049,Modoc County,California,7.2,0.7516
-08017,Cheyenne County,Colorado,7.2,0.2589
-08065,Lake County,Colorado,7.2,0.4452
-08071,Las Animas County,Colorado,7.2,0.8373
-08079,Mineral County,Colorado,7.2,0.0261
-08089,Otero County,Colorado,7.2,0.9561
-08109,Saguache County,Colorado,7.2,0.807
-08111,San Juan County,Colorado,7.2,0.1283
-09007,Middlesex County,Connecticut,7.2,0.1182
+2020,Anchorage Municipality,Alaska,7.2,0.4602
+2105,Hoonah-Angoon Census Area,Alaska,7.2,0.4178
+6011,Colusa County,California,7.2,0.7436
+6049,Modoc County,California,7.2,0.7516
+8017,Cheyenne County,Colorado,7.2,0.2589
+8065,Lake County,Colorado,7.2,0.4452
+8071,Las Animas County,Colorado,7.2,0.8373
+8079,Mineral County,Colorado,7.2,0.0261
+8089,Otero County,Colorado,7.2,0.9561
+8109,Saguache County,Colorado,7.2,0.807
+8111,San Juan County,Colorado,7.2,0.1283
+9007,Middlesex County,Connecticut,7.2,0.1182
 13161,Jeff Davis County,Georgia,7.2,0.9373
 13187,Lumpkin County,Georgia,7.2,0.4338
 16033,Clark County,Idaho,7.2,0.8911
@@ -581,17 +579,17 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51820,Waynesboro City,Virginia,7.2,0.6013
 53051,Pend Oreille County,Washington,7.2,0.536
 55007,Bayfield County,Wisconsin,7.2,0.099
-01133,Winston County,Alabama,7.3,0.7025
-04005,Coconino County,Arizona,7.3,0.7131
-06027,Inyo County,California,7.3,0.5701
-06043,Mariposa County,California,7.3,0.5293
-06091,Sierra County,California,7.3,0.0452
-06105,Trinity County,California,7.3,0.7411
-06109,Tuolumne County,California,7.3,0.4688
-08007,Archuleta County,Colorado,7.3,0.257
-08011,Bent County,Colorado,7.3,0.8981
-08039,Elbert County,Colorado,7.3,0
-08057,Jackson County,Colorado,7.3,0.1137
+1133,Winston County,Alabama,7.3,0.7025
+4005,Coconino County,Arizona,7.3,0.7131
+6027,Inyo County,California,7.3,0.5701
+6043,Mariposa County,California,7.3,0.5293
+6091,Sierra County,California,7.3,0.0452
+6105,Trinity County,California,7.3,0.7411
+6109,Tuolumne County,California,7.3,0.4688
+8007,Archuleta County,Colorado,7.3,0.257
+8011,Bent County,Colorado,7.3,0.8981
+8039,Elbert County,Colorado,7.3,0
+8057,Jackson County,Colorado,7.3,0.1137
 16003,Adams County,Idaho,7.3,0.2936
 16065,Madison County,Idaho,7.3,0.4029
 17005,Bond County,Illinois,7.3,0.3732
@@ -708,13 +706,13 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55133,Waukesha County,Wisconsin,7.3,0.0194
 56023,Lincoln County,Wyoming,7.3,0.0809
 56025,Natrona County,Wyoming,7.3,0.2952
-05113,Polk County,Arkansas,7.4,0.8949
-06007,Butte County,California,7.4,0.8064
-06021,Glenn County,California,7.4,0.8895
-06051,Mono County,California,7.4,0.1408
-06097,Sonoma County,California,7.4,0.4035
-08077,Mesa County,Colorado,7.4,0.5755
-08081,Moffat County,Colorado,7.4,0.5471
+5113,Polk County,Arkansas,7.4,0.8949
+6007,Butte County,California,7.4,0.8064
+6021,Glenn County,California,7.4,0.8895
+6051,Mono County,California,7.4,0.1408
+6097,Sonoma County,California,7.4,0.4035
+8077,Mesa County,Colorado,7.4,0.5755
+8081,Moffat County,Colorado,7.4,0.5471
 13047,Catoosa County,Georgia,7.4,0.1318
 13057,Cherokee County,Georgia,7.4,0.1185
 13101,Echols County,Georgia,7.4,0.6615
@@ -801,19 +799,19 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 56007,Carbon County,Wyoming,7.4,0.5029
 56015,Goshen County,Wyoming,7.4,0.3264
 56043,Washakie County,Wyoming,7.4,0.3732
-01057,Fayette County,Alabama,7.5,0.7038
-01059,Franklin County,Alabama,7.5,0.8417
-02063,Chugach Census Area,Alaska,7.5,No Data
-02170,Matanuska-Susitna Borough,Alaska,7.5,0.3172
-06003,Alpine County,California,7.5,0.7287
-06005,Amador County,California,7.5,0.5334
-06045,Mendocino County,California,7.5,0.8818
-06063,Plumas County,California,7.5,0.2653
-06093,Siskiyou County,California,7.5,0.7223
-08027,Custer County,Colorado,7.5,0.2433
-08063,Kit Carson County,Colorado,7.5,0.5153
-08075,Logan County,Colorado,7.5,0.628
-08105,Rio Grande County,Colorado,7.5,0.9586
+1057,Fayette County,Alabama,7.5,0.7038
+1059,Franklin County,Alabama,7.5,0.8417
+2063,Chugach Census Area,Alaska,7.5,No Data
+2170,Matanuska-Susitna Borough,Alaska,7.5,0.3172
+6003,Alpine County,California,7.5,0.7287
+6005,Amador County,California,7.5,0.5334
+6045,Mendocino County,California,7.5,0.8818
+6063,Plumas County,California,7.5,0.2653
+6093,Siskiyou County,California,7.5,0.7223
+8027,Custer County,Colorado,7.5,0.2433
+8063,Kit Carson County,Colorado,7.5,0.5153
+8075,Logan County,Colorado,7.5,0.628
+8105,Rio Grande County,Colorado,7.5,0.9586
 13125,Glascock County,Georgia,7.5,0.686
 13147,Hart County,Georgia,7.5,0.7194
 13149,Heard County,Georgia,7.5,0.7232
@@ -918,16 +916,16 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55061,Kewaunee County,Wisconsin,7.5,0.0586
 55083,Oconto County,Wisconsin,7.5,0.064
 56033,Sheridan County,Wyoming,7.5,0.0895
-05137,Stone County,Arkansas,7.6,0.5102
-08001,Adams County,Colorado,7.6,0.5892
-08009,Baca County,Colorado,7.6,0.6086
-08025,Crowley County,Colorado,7.6,0.893
-08083,Montezuma County,Colorado,7.6,0.4946
-08085,Montrose County,Colorado,7.6,0.7153
-08087,Morgan County,Colorado,7.6,0.7414
-08099,Prowers County,Colorado,7.6,0.9392
-08121,Washington County,Colorado,7.6,0.2822
-09013,Tolland County,Connecticut,7.6,0.0694
+5137,Stone County,Arkansas,7.6,0.5102
+8001,Adams County,Colorado,7.6,0.5892
+8009,Baca County,Colorado,7.6,0.6086
+8025,Crowley County,Colorado,7.6,0.893
+8083,Montezuma County,Colorado,7.6,0.4946
+8085,Montrose County,Colorado,7.6,0.7153
+8087,Morgan County,Colorado,7.6,0.7414
+8099,Prowers County,Colorado,7.6,0.9392
+8121,Washington County,Colorado,7.6,0.2822
+9013,Tolland County,Connecticut,7.6,0.0694
 13073,Columbia County,Georgia,7.6,0.1334
 13105,Elbert County,Georgia,7.6,0.8338
 13117,Forsyth County,Georgia,7.6,0.0373
@@ -1006,18 +1004,18 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55081,Monroe County,Wisconsin,7.6,0.4621
 55085,Oneida County,Wisconsin,7.6,0.014
 56031,Platte County,Wyoming,7.6,0.0952
-02066,Copper River Census Area,Alaska,7.7,No Data
-02090,Fairbanks North Star Borough,Alaska,7.7,0.3446
-02240,Southeast Fairbanks Census Area,Alaska,7.7,0.5838
-04019,Pima County,Arizona,7.7,0.8828
-04023,Santa Cruz County,Arizona,7.7,0.9318
-05005,Baxter County,Arkansas,7.7,0.2793
-05065,Izard County,Arkansas,7.7,0.5697
-05109,Pike County,Arkansas,7.7,0.7124
-06001,Alameda County,California,7.7,0.4701
-06035,Lassen County,California,7.7,0.5997
-08021,Conejos County,Colorado,7.7,0.9325
-08095,Phillips County,Colorado,7.7,0.2955
+2066,Copper River Census Area,Alaska,7.7,No Data
+2090,Fairbanks North Star Borough,Alaska,7.7,0.3446
+2240,Southeast Fairbanks Census Area,Alaska,7.7,0.5838
+4019,Pima County,Arizona,7.7,0.8828
+4023,Santa Cruz County,Arizona,7.7,0.9318
+5005,Baxter County,Arkansas,7.7,0.2793
+5065,Izard County,Arkansas,7.7,0.5697
+5109,Pike County,Arkansas,7.7,0.7124
+6001,Alameda County,California,7.7,0.4701
+6035,Lassen County,California,7.7,0.5997
+8021,Conejos County,Colorado,7.7,0.9325
+8095,Phillips County,Colorado,7.7,0.2955
 13083,Dade County,Georgia,7.7,0.5156
 13201,Miller County,Georgia,7.7,0.7799
 13249,Schley County,Georgia,7.7,0.8248
@@ -1107,19 +1105,19 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55125,Vilas County,Wisconsin,7.7,0.1395
 56005,Campbell County,Wyoming,7.7,0.3315
 56041,Uinta County,Wyoming,7.7,0.4522
-01067,Henry County,Alabama,7.8,0.5519
-02122,Kenai Peninsula Borough,Alaska,7.8,0.4073
-02230,Skagway Municipality,Alaska,7.8,0.1685
-05049,Fulton County,Arkansas,7.8,0.6688
-05099,Nevada County,Arkansas,7.8,0.8841
-05105,Perry County,Arkansas,7.8,0.636
-05117,Prairie County,Arkansas,7.8,0.6548
-06033,Lake County,California,7.8,0.9178
-06111,Ventura County,California,7.8,0.4828
-08019,Clear Creek County,Colorado,7.8,0.0197
-08023,Costilla County,Colorado,7.8,0.9379
-08043,Fremont County,Colorado,7.8,0.6525
-08123,Weld County,Colorado,7.8,0.3994
+1067,Henry County,Alabama,7.8,0.5519
+2122,Kenai Peninsula Borough,Alaska,7.8,0.4073
+2230,Skagway Municipality,Alaska,7.8,0.1685
+5049,Fulton County,Arkansas,7.8,0.6688
+5099,Nevada County,Arkansas,7.8,0.8841
+5105,Perry County,Arkansas,7.8,0.636
+5117,Prairie County,Arkansas,7.8,0.6548
+6033,Lake County,California,7.8,0.9178
+6111,Ventura County,California,7.8,0.4828
+8019,Clear Creek County,Colorado,7.8,0.0197
+8023,Costilla County,Colorado,7.8,0.9379
+8043,Fremont County,Colorado,7.8,0.6525
+8123,Weld County,Colorado,7.8,0.3994
 13221,Oglethorpe County,Georgia,7.8,0.5217
 17011,Bureau County,Illinois,7.8,0.2863
 17051,Fayette County,Illinois,7.8,0.5949
@@ -1210,13 +1208,13 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55059,Kenosha County,Wisconsin,7.8,0.5111
 55063,La Crosse County,Wisconsin,7.8,0.2089
 55111,Sauk County,Wisconsin,7.8,0.2344
-05081,Little River County,Arkansas,7.9,0.6306
-05101,Newton County,Arkansas,7.9,0.2815
-06013,Contra Costa County,California,7.9,0.4057
-06075,San Francisco County,California,7.9,0.3911
-06113,Yolo County,California,7.9,0.6768
-06115,Yuba County,California,7.9,0.942
-08055,Huerfano County,Colorado,7.9,0.5955
+5081,Little River County,Arkansas,7.9,0.6306
+5101,Newton County,Arkansas,7.9,0.2815
+6013,Contra Costa County,California,7.9,0.4057
+6075,San Francisco County,California,7.9,0.3911
+6113,Yolo County,California,7.9,0.6768
+6115,Yuba County,California,7.9,0.942
+8055,Huerfano County,Colorado,7.9,0.5955
 11001,District Of Columbia,District of Columbia,7.9,0.5965
 13003,Atkinson County,Georgia,7.9,0.9615
 13011,Banks County,Georgia,7.9,0.5586
@@ -1299,12 +1297,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54073,Pleasants County,West Virginia,7.9,0.4468
 55109,St. Croix County,Wisconsin,7.9,0.0146
 55113,Sawyer County,Wisconsin,7.9,0.4268
-01001,Autauga County,Alabama,8,0.4354
-01093,Marion County,Alabama,8,0.671
-04003,Cochise County,Arizona,8,0.9064
-04007,Gila County,Arizona,8,0.899
-06059,Orange County,California,8,0.4191
-06085,Santa Clara County,California,8,0.3557
+1001,Autauga County,Alabama,8,0.4354
+1093,Marion County,Alabama,8,0.671
+4003,Cochise County,Arizona,8,0.9064
+4007,Gila County,Arizona,8,0.899
+6059,Orange County,California,8,0.4191
+6085,Santa Clara County,California,8,0.3557
 13023,Bleckley County,Georgia,8,0.7395
 13055,Chattooga County,Georgia,8,0.9252
 16009,Benewah County,Idaho,8,0.7334
@@ -1375,12 +1373,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55009,Brown County,Wisconsin,8,0.3299
 55047,Green Lake County,Wisconsin,8,0.2869
 55095,Polk County,Wisconsin,8,0.0873
-02150,Kodiak Island Borough,Alaska,8.1,0.7006
-04012,La Paz County,Arizona,8.1,0.9236
-05051,Garland County,Arkansas,8.1,0.828
-05097,Montgomery County,Arkansas,8.1,0.7
-06015,Del Norte County,California,8.1,0.9713
-06089,Shasta County,California,8.1,0.7022
+2150,Kodiak Island Borough,Alaska,8.1,0.7006
+4012,La Paz County,Arizona,8.1,0.9236
+5051,Garland County,Arkansas,8.1,0.828
+5097,Montgomery County,Arkansas,8.1,0.7
+6015,Del Norte County,California,8.1,0.9713
+6089,Shasta County,California,8.1,0.7022
 13043,Candler County,Georgia,8.1,0.9828
 13085,Dawson County,Georgia,8.1,0.1038
 13143,Haralson County,Georgia,8.1,0.5427
@@ -1453,13 +1451,13 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 55135,Waupaca County,Wisconsin,8.1,0.1815
 56021,Laramie County,Wyoming,8.1,0.2697
 56037,Sweetwater County,Wyoming,8.1,0.3701
-01027,Clay County,Alabama,8.2,0.564
-01033,Colbert County,Alabama,8.2,0.4274
-02180,Nome Census Area,Alaska,8.2,0.9299
-05073,Lafayette County,Arkansas,8.2,0.7898
-05087,Madison County,Arkansas,8.2,0.6535
-06079,San Luis Obispo County,California,8.2,0.3739
-09011,New London County,Connecticut,8.2,0.3561
+1027,Clay County,Alabama,8.2,0.564
+1033,Colbert County,Alabama,8.2,0.4274
+2180,Nome Census Area,Alaska,8.2,0.9299
+5073,Lafayette County,Arkansas,8.2,0.7898
+5087,Madison County,Arkansas,8.2,0.6535
+6079,San Luis Obispo County,California,8.2,0.3739
+9011,New London County,Connecticut,8.2,0.3561
 13005,Bacon County,Georgia,8.2,0.9389
 13053,Chattahoochee County,Georgia,8.2,0.6379
 13171,Lamar County,Georgia,8.2,0.4917
@@ -1532,10 +1530,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 50011,Franklin County,Vermont,8.2,0.1111
 53041,Lewis County,Washington,8.2,0.7889
 55053,Jackson County,Wisconsin,8.2,0.5003
-01029,Cleburne County,Alabama,8.3,0.5417
-01079,Lawrence County,Alabama,8.3,0.4952
-05047,Franklin County,Arkansas,8.3,0.5943
-05135,Sharp County,Arkansas,8.3,0.6191
+1029,Cleburne County,Alabama,8.3,0.5417
+1079,Lawrence County,Alabama,8.3,0.4952
+5047,Franklin County,Arkansas,8.3,0.5943
+5135,Sharp County,Arkansas,8.3,0.6191
 13111,Fannin County,Georgia,8.3,0.3003
 13123,Gilmer County,Georgia,8.3,0.5599
 13197,Marion County,Georgia,8.3,0.8519
@@ -1611,15 +1609,15 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51171,Shenandoah County,Virginia,8.3,0.3643
 53005,Benton County,Washington,8.3,0.514
 55033,Dunn County,Wisconsin,8.3,0.1847
-01037,Coosa County,Alabama,8.4,0.5261
-02164,Lake and Peninsula Borough,Alaska,8.4,0.7978
-02282,Yakutat City and Borough,Alaska,8.4,0.5873
-05053,Grant County,Arkansas,8.4,0.3541
-05079,Lincoln County,Arkansas,8.4,0.8134
-06053,Monterey County,California,8.4,0.799
-06073,San Diego County,California,8.4,0.5596
-06101,Sutter County,California,8.4,0.8822
-08125,Yuma County,Colorado,8.4,0.5637
+1037,Coosa County,Alabama,8.4,0.5261
+2164,Lake and Peninsula Borough,Alaska,8.4,0.7978
+2282,Yakutat City and Borough,Alaska,8.4,0.5873
+5053,Grant County,Arkansas,8.4,0.3541
+5079,Lincoln County,Arkansas,8.4,0.8134
+6053,Monterey County,California,8.4,0.799
+6073,San Diego County,California,8.4,0.5596
+6101,Sutter County,California,8.4,0.8822
+8125,Yuma County,Colorado,8.4,0.5637
 13109,Evans County,Georgia,8.4,0.9847
 13157,Jackson County,Georgia,8.4,0.3516
 13239,Quitman County,Georgia,8.4,0.9433
@@ -1695,13 +1693,13 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54089,Summers County,West Virginia,8.4,0.829
 55087,Outagamie County,Wisconsin,8.4,0.0978
 55105,Rock County,Wisconsin,8.4,0.4561
-01009,Blount County,Alabama,8.5,0.4242
-01019,Cherokee County,Alabama,8.5,0.4516
-01075,Lamar County,Alabama,8.5,0.6264
-02070,Dillingham Census Area,Alaska,8.5,0.8682
-05013,Calhoun County,Arkansas,8.5,0.5481
-05043,Drew County,Arkansas,8.5,0.801
-06039,Madera County,California,8.5,0.9541
+1009,Blount County,Alabama,8.5,0.4242
+1019,Cherokee County,Alabama,8.5,0.4516
+1075,Lamar County,Alabama,8.5,0.6264
+2070,Dillingham Census Area,Alaska,8.5,0.8682
+5013,Calhoun County,Arkansas,8.5,0.5481
+5043,Drew County,Arkansas,8.5,0.801
+6039,Madera County,California,8.5,0.9541
 13013,Barrow County,Georgia,8.5,0.4204
 13077,Coweta County,Georgia,8.5,0.2427
 13139,Hall County,Georgia,8.5,0.6618
@@ -1769,12 +1767,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54075,Pocahontas County,West Virginia,8.5,0.4971
 54097,Upshur County,West Virginia,8.5,0.6911
 55073,Marathon County,Wisconsin,8.5,0.1443
-02198,Prince of Wales-Hyder Census Area,Alaska,8.6,0.7662
-04013,Maricopa County,Arizona,8.6,0.6354
-05129,Searcy County,Arkansas,8.6,0.4376
-06025,Imperial County,California,8.6,0.9978
-06081,San Mateo County,California,8.6,0.265
-06083,Santa Barbara County,California,8.6,0.7111
+2198,Prince of Wales-Hyder Census Area,Alaska,8.6,0.7662
+4013,Maricopa County,Arizona,8.6,0.6354
+5129,Searcy County,Arkansas,8.6,0.4376
+6025,Imperial County,California,8.6,0.9978
+6081,San Mateo County,California,8.6,0.265
+6083,Santa Barbara County,California,8.6,0.7111
 13061,Clay County,Georgia,8.6,0.9309
 13071,Colquitt County,Georgia,8.6,0.9812
 13107,Emanuel County,Georgia,8.6,0.9768
@@ -1836,9 +1834,9 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54085,Ritchie County,West Virginia,8.6,0.364
 56003,Big Horn County,Wyoming,8.6,0.3955
 56009,Converse County,Wyoming,8.6,0.2048
-02220,Sitka City and Borough,Alaska,8.7,0.4022
-05015,Carroll County,Arkansas,8.7,0.5952
-06069,San Benito County,California,8.7,0.5245
+2220,Sitka City and Borough,Alaska,8.7,0.4022
+5015,Carroll County,Arkansas,8.7,0.5952
+6069,San Benito County,California,8.7,0.5245
 13039,Camden County,Georgia,8.7,0.5159
 13065,Clinch County,Georgia,8.7,0.9777
 13099,Early County,Georgia,8.7,0.9201
@@ -1908,10 +1906,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 53023,Garfield County,Washington,8.7,0.1834
 53063,Spokane County,Washington,8.7,0.4825
 55119,Taylor County,Wisconsin,8.7,0.2
-01081,Lee County,Alabama,8.8,0.6602
-04009,Graham County,Arizona,8.8,0.964
-05075,Lawrence County,Arkansas,8.8,0.6471
-08003,Alamosa County,Colorado,8.8,0.9452
+1081,Lee County,Alabama,8.8,0.6602
+4009,Graham County,Arizona,8.8,0.964
+5075,Lawrence County,Arkansas,8.8,0.6471
+8003,Alamosa County,Colorado,8.8,0.9452
 13025,Brantley County,Georgia,8.8,0.6229
 13173,Lanier County,Georgia,8.8,0.8697
 13183,Long County,Georgia,8.8,0.8271
@@ -1982,12 +1980,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54101,Webster County,West Virginia,8.8,0.7487
 56013,Fremont County,Wyoming,8.8,0.5624
 56045,Weston County,Wyoming,8.8,0.3475
-01071,Jackson County,Alabama,8.9,0.5726
-02130,Ketchikan Gateway Borough,Alaska,8.9,0.5548
-02290,Yukon-Koyukuk Census Area,Alaska,8.9,0.8812
-05085,Lonoke County,Arkansas,8.9,0.3309
-05127,Scott County,Arkansas,8.9,0.8873
-06019,Fresno County,California,8.9,0.9611
+1071,Jackson County,Alabama,8.9,0.5726
+2130,Ketchikan Gateway Borough,Alaska,8.9,0.5548
+2290,Yukon-Koyukuk Census Area,Alaska,8.9,0.8812
+5085,Lonoke County,Arkansas,8.9,0.3309
+5127,Scott County,Arkansas,8.9,0.8873
+6019,Fresno County,California,8.9,0.9611
 13035,Butts County,Georgia,8.9,0.7653
 13113,Fayette County,Georgia,8.9,0.0608
 13135,Gwinnett County,Georgia,8.9,0.4347
@@ -2045,18 +2043,18 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 53067,Thurston County,Washington,8.9,0.3299
 55041,Forest County,Wisconsin,8.9,0.5774
 55115,Shawano County,Wisconsin,8.9,0.1382
-01011,Bullock County,Alabama,9,0.8898
-05011,Bradley County,Arkansas,9,0.9803
-05019,Clark County,Arkansas,9,0.7892
-05037,Cross County,Arkansas,9,0.7013
-05061,Howard County,Arkansas,9,0.9045
-05103,Ouachita County,Arkansas,9,0.8656
-05147,Woodruff County,Arkansas,9,0.849
-05149,Yell County,Arkansas,9,0.8783
-06023,Humboldt County,California,9,0.7605
-06031,Kings County,California,9,0.9707
-06095,Solano County,California,9,0.5911
-09009,New Haven County,Connecticut,9,0.5223
+1011,Bullock County,Alabama,9,0.8898
+5011,Bradley County,Arkansas,9,0.9803
+5019,Clark County,Arkansas,9,0.7892
+5037,Cross County,Arkansas,9,0.7013
+5061,Howard County,Arkansas,9,0.9045
+5103,Ouachita County,Arkansas,9,0.8656
+5147,Woodruff County,Arkansas,9,0.849
+5149,Yell County,Arkansas,9,0.8783
+6023,Humboldt County,California,9,0.7605
+6031,Kings County,California,9,0.9707
+6095,Solano County,California,9,0.5911
+9009,New Haven County,Connecticut,9,0.5223
 13001,Appling County,Georgia,9,0.9669
 13007,Baker County,Georgia,9,0.7424
 13121,Fulton County,Georgia,9,0.5268
@@ -2112,10 +2110,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 48507,Zavala County,Texas,9,0.9987
 51131,Northampton County,Virginia,9,0.6764
 55101,Racine County,Wisconsin,9,0.4551
-01007,Bibb County,Alabama,9.1,0.6003
-05007,Benton County,Arkansas,9.1,0.2707
-05017,Chicot County,Arkansas,9.1,0.9968
-05039,Dallas County,Arkansas,9.1,0.8777
+1007,Bibb County,Alabama,9.1,0.6003
+5007,Benton County,Arkansas,9.1,0.2707
+5017,Chicot County,Arkansas,9.1,0.9968
+5039,Dallas County,Arkansas,9.1,0.8777
 10005,Sussex County,Delaware,9.1,0.4019
 13015,Bartow County,Georgia,9.1,0.5914
 13093,Dooly County,Georgia,9.1,0.9484
@@ -2187,14 +2185,14 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51161,Roanoke County,Virginia,9.1,0.1312
 53003,Asotin County,Washington,9.1,0.4248
 54083,Randolph County,West Virginia,9.1,0.5806
-01005,Barbour County,Alabama,9.2,0.9959
-01049,Dekalb County,Alabama,9.2,0.8022
-02158,Kusilvak Census Area,Alaska,9.2,0.9334
-02275,Wrangell City and Borough,Alaska,9.2,0.5618
-05023,Cleburne County,Arkansas,9.2,0.2083
-05063,Independence County,Arkansas,9.2,0.7525
-05067,Jackson County,Arkansas,9.2,0.765
-05077,Lee County,Arkansas,9.2,0.9656
+1005,Barbour County,Alabama,9.2,0.9959
+1049,Dekalb County,Alabama,9.2,0.8022
+2158,Kusilvak Census Area,Alaska,9.2,0.9334
+2275,Wrangell City and Borough,Alaska,9.2,0.5618
+5023,Cleburne County,Arkansas,9.2,0.2083
+5063,Independence County,Arkansas,9.2,0.7525
+5067,Jackson County,Arkansas,9.2,0.765
+5077,Lee County,Arkansas,9.2,0.9656
 13191,Mcintosh County,Georgia,9.2,0.5863
 17201,Winnebago County,Illinois,9.2,0.7204
 18073,Jasper County,Indiana,9.2,0.2685
@@ -2243,8 +2241,8 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 45019,Charleston County,South Carolina,9.2,0.3156
 47141,Putnam County,Tennessee,9.2,0.6182
 48231,Hunt County,Texas,9.2,0.8341
-05041,Desha County,Arkansas,9.3,0.9596
-05083,Logan County,Arkansas,9.3,0.8045
+5041,Desha County,Arkansas,9.3,0.9596
+5083,Logan County,Arkansas,9.3,0.8045
 13017,Ben Hill County,Georgia,9.3,0.8726
 13049,Charlton County,Georgia,9.3,0.8752
 13081,Crisp County,Georgia,9.3,0.9857
@@ -2290,14 +2288,14 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54037,Jefferson County,West Virginia,9.3,0.2255
 54061,Monongalia County,West Virginia,9.3,0.4111
 55107,Rusk County,Wisconsin,9.3,0.3465
-01041,Crenshaw County,Alabama,9.4,0.6873
-01099,Monroe County,Alabama,9.4,0.7481
-01127,Walker County,Alabama,9.4,0.7452
-02050,Bethel Census Area,Alaska,9.4,0.9748
-05001,Arkansas County,Arkansas,9.4,0.7787
-05025,Cleveland County,Arkansas,9.4,0.5643
-05059,Hot Spring County,Arkansas,9.4,0.8188
-06067,Sacramento County,California,9.4,0.7338
+1041,Crenshaw County,Alabama,9.4,0.6873
+1099,Monroe County,Alabama,9.4,0.7481
+1127,Walker County,Alabama,9.4,0.7452
+2050,Bethel Census Area,Alaska,9.4,0.9748
+5001,Arkansas County,Arkansas,9.4,0.7787
+5025,Cleveland County,Arkansas,9.4,0.5643
+5059,Hot Spring County,Arkansas,9.4,0.8188
+6067,Sacramento County,California,9.4,0.7338
 13087,Decatur County,Georgia,9.4,0.9455
 13169,Jones County,Georgia,9.4,0.3793
 13199,Meriwether County,Georgia,9.4,0.8701
@@ -2334,13 +2332,13 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51147,Prince Edward County,Virginia,9.4,0.7296
 54069,Ohio County,West Virginia,9.4,0.3108
 55079,Milwaukee County,Wisconsin,9.4,0.8061
-01085,Lowndes County,Alabama,9.5,0.9188
-01117,Shelby County,Alabama,9.5,0.1169
-02185,North Slope Borough,Alaska,9.5,0.7344
-05121,Randolph County,Arkansas,9.5,0.7166
-05139,Union County,Arkansas,9.5,0.8054
-06099,Stanislaus County,California,9.5,0.8675
-09003,Hartford County,Connecticut,9.5,0.515
+1085,Lowndes County,Alabama,9.5,0.9188
+1117,Shelby County,Alabama,9.5,0.1169
+2185,North Slope Borough,Alaska,9.5,0.7344
+5121,Randolph County,Arkansas,9.5,0.7166
+5139,Union County,Arkansas,9.5,0.8054
+6099,Stanislaus County,California,9.5,0.8675
+9003,Hartford County,Connecticut,9.5,0.515
 13127,Glynn County,Georgia,9.5,0.7159
 13129,Gordon County,Georgia,9.5,0.8806
 13155,Irwin County,Georgia,9.5,0.8408
@@ -2377,12 +2375,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 53019,Ferry County,Washington,9.5,0.8223
 54023,Grant County,West Virginia,9.5,0.3675
 54063,Monroe County,West Virginia,9.5,0.4662
-01095,Marshall County,Alabama,9.6,0.7261
-02060,Bristol Bay Borough,Alaska,9.6,0.3525
-02188,Northwest Arctic Borough,Alaska,9.6,0.9354
-05091,Miller County,Arkansas,9.6,0.9124
-05125,Saline County,Arkansas,9.6,0.3325
-05143,Washington County,Arkansas,9.6,0.6745
+1095,Marshall County,Alabama,9.6,0.7261
+2060,Bristol Bay Borough,Alaska,9.6,0.3525
+2188,Northwest Arctic Borough,Alaska,9.6,0.9354
+5091,Miller County,Arkansas,9.6,0.9124
+5125,Saline County,Arkansas,9.6,0.3325
+5143,Washington County,Arkansas,9.6,0.6745
 13029,Bryan County,Georgia,9.6,0.3389
 13037,Calhoun County,Georgia,9.6,0.9774
 18029,Dearborn County,Indiana,9.6,0.0799
@@ -2418,9 +2416,9 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 48139,Ellis County,Texas,9.6,0.3924
 51179,Stafford County,Virginia,9.6,0.1541
 51670,Hopewell City,Virginia,9.6,0.9408
-01031,Coffee County,Alabama,9.7,0.5408
-01083,Limestone County,Alabama,9.7,0.5296
-06047,Merced County,California,9.7,0.9717
+1031,Coffee County,Alabama,9.7,0.5408
+1083,Limestone County,Alabama,9.7,0.5296
+6047,Merced County,California,9.7,0.9717
 13009,Baldwin County,Georgia,9.7,0.8666
 13305,Wayne County,Georgia,9.7,0.9166
 18063,Hendricks County,Indiana,9.7,0.0815
@@ -2463,12 +2461,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51810,Virginia Beach City,Virginia,9.7,0.1889
 53049,Pacific County,Washington,9.7,0.736
 53053,Pierce County,Washington,9.7,0.4873
-01013,Butler County,Alabama,9.8,0.8653
-01043,Cullman County,Alabama,9.8,0.5182
-01065,Hale County,Alabama,9.8,0.9599
-05009,Boone County,Arkansas,9.8,0.4379
-05095,Monroe County,Arkansas,9.8,0.8516
-06065,Riverside County,California,9.8,0.7939
+1013,Butler County,Alabama,9.8,0.8653
+1043,Cullman County,Alabama,9.8,0.5182
+1065,Hale County,Alabama,9.8,0.9599
+5009,Boone County,Arkansas,9.8,0.4379
+5095,Monroe County,Arkansas,9.8,0.8516
+6065,Riverside County,California,9.8,0.7939
 13031,Bulloch County,Georgia,9.8,0.8121
 13051,Chatham County,Georgia,9.8,0.6949
 13059,Clarke County,Georgia,9.8,0.7675
@@ -2499,14 +2497,14 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51125,Nelson County,Virginia,9.8,0.3
 54021,Gilmer County,West Virginia,9.8,0.7564
 54071,Pendleton County,West Virginia,9.8,0.358
-01003,Baldwin County,Alabama,9.9,0.2162
-01021,Chilton County,Alabama,9.9,0.7602
-01025,Clarke County,Alabama,9.9,0.8471
-01109,Pike County,Alabama,9.9,0.9016
-02013,Aleutians East Borough,Alaska,9.9,0.5803
-05119,Pulaski County,Arkansas,9.9,0.6287
-06037,Los Angeles County,California,9.9,0.7682
-06077,San Joaquin County,California,9.9,0.8892
+1003,Baldwin County,Alabama,9.9,0.2162
+1021,Chilton County,Alabama,9.9,0.7602
+1025,Clarke County,Alabama,9.9,0.8471
+1109,Pike County,Alabama,9.9,0.9016
+2013,Aleutians East Borough,Alaska,9.9,0.5803
+5119,Pulaski County,Arkansas,9.9,0.6287
+6037,Los Angeles County,California,9.9,0.7682
+6077,San Joaquin County,California,9.9,0.8892
 13045,Carroll County,Georgia,9.9,0.7825
 13141,Hancock County,Georgia,9.9,0.7984
 13233,Polk County,Georgia,9.9,0.8048
@@ -2548,12 +2546,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51057,Essex County,Virginia,9.9,0.5634
 51167,Russell County,Virginia,9.9,0.4487
 54053,Mason County,West Virginia,9.9,0.5497
-01107,Pickens County,Alabama,10,0.9207
-04015,Mohave County,Arizona,10,0.8624
-05031,Craighead County,Arkansas,10,0.8041
-05071,Johnson County,Arkansas,10,0.8768
-05133,Sevier County,Arkansas,10,0.7675
-09015,Windham County,Connecticut,10,0.4232
+1107,Pickens County,Alabama,10,0.9207
+4015,Mohave County,Arizona,10,0.8624
+5031,Craighead County,Arkansas,10,0.8041
+5071,Johnson County,Arkansas,10,0.8768
+5133,Sevier County,Arkansas,10,0.7675
+9015,Windham County,Connecticut,10,0.4232
 10003,New Castle County,Delaware,10,0.3761
 13163,Jefferson County,Georgia,10,0.9439
 13207,Monroe County,Georgia,10,0.4596
@@ -2609,9 +2607,9 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 48167,Galveston County,Texas,10.1,0.585
 49015,Emery County,Utah,10.1,0.2627
 54095,Tyler County,West Virginia,10.1,0.2213
-01069,Houston County,Alabama,10.2,0.6838
-05045,Faulkner County,Arkansas,10.2,0.4774
-05145,White County,Arkansas,10.2,0.7446
+1069,Houston County,Alabama,10.2,0.6838
+5045,Faulkner County,Arkansas,10.2,0.4774
+5145,White County,Arkansas,10.2,0.7446
 13235,Pulaski County,Georgia,10.2,0.8459
 19179,Wapello County,Iowa,10.2,0.7439
 19193,Woodbury County,Iowa,10.2,0.6968
@@ -2639,9 +2637,9 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51760,Richmond City,Virginia,10.2,0.7729
 53077,Yakima County,Washington,10.2,0.9277
 54031,Hardy County,West Virginia,10.2,0.285
-04021,Pinal County,Arizona,10.3,0.8592
-05115,Pope County,Arkansas,10.3,0.7936
-05141,Van Buren County,Arkansas,10.3,0.7226
+4021,Pinal County,Arizona,10.3,0.8592
+5115,Pope County,Arkansas,10.3,0.7936
+5141,Van Buren County,Arkansas,10.3,0.7226
 20013,Brown County,Kansas,10.3,0.2717
 20055,Finney County,Kansas,10.3,0.8236
 20125,Montgomery County,Kansas,10.3,0.8029
@@ -2666,9 +2664,9 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 48157,Fort Bend County,Texas,10.3,0.2873
 51093,Isle Of Wight County,Virginia,10.3,0.3392
 51165,Rockingham County,Virginia,10.3,0.3197
-01129,Washington County,Alabama,10.4,0.7303
-05131,Sebastian County,Arkansas,10.4,0.8328
-08101,Pueblo County,Colorado,10.4,0.8669
+1129,Washington County,Alabama,10.4,0.7303
+5131,Sebastian County,Arkansas,10.4,0.8328
+8101,Pueblo County,Colorado,10.4,0.8669
 13103,Effingham County,Georgia,10.4,0.2363
 13131,Grady County,Georgia,10.4,0.9258
 13271,Telfair County,Georgia,10.4,0.8369
@@ -2694,14 +2692,14 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51590,Danville City,Virginia,10.4,0.9589
 53069,Wahkiakum County,Washington,10.4,0.1809
 54047,Mcdowell County,West Virginia,10.4,0.9029
-01039,Covington County,Alabama,10.5,0.7723
-01051,Elmore County,Alabama,10.5,0.5401
-01053,Escambia County,Alabama,10.5,0.8557
-01091,Marengo County,Alabama,10.5,0.7621
-01113,Russell County,Alabama,10.5,0.9115
-05029,Conway County,Arkansas,10.5,0.7589
-05111,Poinsett County,Arkansas,10.5,0.8268
-06107,Tulare County,California,10.5,0.9417
+1039,Covington County,Alabama,10.5,0.7723
+1051,Elmore County,Alabama,10.5,0.5401
+1053,Escambia County,Alabama,10.5,0.8557
+1091,Marengo County,Alabama,10.5,0.7621
+1113,Russell County,Alabama,10.5,0.9115
+5029,Conway County,Arkansas,10.5,0.7589
+5111,Poinsett County,Arkansas,10.5,0.8268
+6107,Tulare County,California,10.5,0.9417
 13079,Crawford County,Georgia,10.5,0.6815
 16069,Nez Perce County,Idaho,10.5,0.5067
 22005,Ascension Parish,Louisiana,10.5,0.3968
@@ -2726,10 +2724,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51149,Prince George County,Virginia,10.5,0.3175
 53027,Grays Harbor County,Washington,10.5,0.8392
 54045,Logan County,West Virginia,10.5,0.7471
-01115,St. Clair County,Alabama,10.6,0.3656
-01121,Talladega County,Alabama,10.6,0.8736
-04017,Navajo County,Arizona,10.6,0.9955
-05021,Clay County,Arkansas,10.6,0.6529
+1115,St. Clair County,Alabama,10.6,0.3656
+1121,Talladega County,Alabama,10.6,0.8736
+4017,Navajo County,Arizona,10.6,0.9955
+5021,Clay County,Arkansas,10.6,0.6529
 13153,Houston County,Georgia,10.6,0.5669
 13225,Peach County,Georgia,10.6,0.9404
 13295,Walker County,Georgia,10.6,0.6408
@@ -2751,10 +2749,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 47065,Hamilton County,Tennessee,10.6,0.4137
 48039,Brazoria County,Texas,10.6,0.5134
 54003,Berkeley County,West Virginia,10.6,0.4433
-01017,Chambers County,Alabama,10.7,0.7382
-01063,Greene County,Alabama,10.7,0.9854
-05057,Hempstead County,Arkansas,10.7,0.9468
-06029,Kern County,California,10.7,0.9659
+1017,Chambers County,Alabama,10.7,0.7382
+1063,Greene County,Alabama,10.7,0.9854
+5057,Hempstead County,Arkansas,10.7,0.9468
+6029,Kern County,California,10.7,0.9659
 13089,Dekalb County,Georgia,10.7,0.6611
 13177,Lee County,Georgia,10.7,0.3519
 13261,Sumter County,Georgia,10.7,0.9764
@@ -2770,10 +2768,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 41047,Marion County,Oregon,10.7,0.8535
 51185,Tazewell County,Virginia,10.7,0.5936
 54011,Cabell County,West Virginia,10.7,0.6245
-01077,Lauderdale County,Alabama,10.8,0.4468
-01089,Madison County,Alabama,10.8,0.3076
-01123,Tallapoosa County,Alabama,10.8,0.8863
-05033,Crawford County,Arkansas,10.8,0.6105
+1077,Lauderdale County,Alabama,10.8,0.4468
+1089,Madison County,Alabama,10.8,0.3076
+1123,Tallapoosa County,Alabama,10.8,0.8863
+5033,Crawford County,Arkansas,10.8,0.6105
 13193,Macon County,Georgia,10.8,0.9312
 13205,Mitchell County,Georgia,10.8,0.9879
 18133,Putnam County,Indiana,10.8,0.3484
@@ -2794,10 +2792,10 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 48141,El Paso County,Texas,10.8,0.9535
 51087,Henrico County,Virginia,10.8,0.2573
 51770,Roanoke City,Virginia,10.8,0.8038
-01103,Morgan County,Alabama,10.9,0.6895
-01111,Randolph County,Alabama,10.9,0.7191
-05027,Columbia County,Arkansas,10.9,0.9398
-05035,Crittenden County,Arkansas,10.9,0.9341
+1103,Morgan County,Alabama,10.9,0.6895
+1111,Randolph County,Alabama,10.9,0.7191
+5027,Columbia County,Arkansas,10.9,0.9398
+5035,Crittenden County,Arkansas,10.9,0.9341
 13217,Newton County,Georgia,10.9,0.707
 18119,Owen County,Indiana,10.9,0.3455
 21083,Graves County,Kentucky,10.9,0.7752
@@ -2817,7 +2815,7 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54029,Hancock County,West Virginia,10.9,0.4051
 54077,Preston County,West Virginia,10.9,0.5732
 54087,Roane County,West Virginia,10.9,0.6465
-01105,Perry County,Alabama,11,0.9949
+1105,Perry County,Alabama,11,0.9949
 13115,Floyd County,Georgia,11,0.8854
 13145,Harris County,Georgia,11,0.1341
 13229,Pierce County,Georgia,11,0.657
@@ -2845,8 +2843,8 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54009,Brooke County,West Virginia,11,0.3306
 54057,Mineral County,West Virginia,11,0.5933
 55078,Menominee County,Wisconsin,11,0.7672
-01061,Geneva County,Alabama,11.1,0.7955
-01087,Macon County,Alabama,11.1,0.8971
+1061,Geneva County,Alabama,11.1,0.7955
+1087,Macon County,Alabama,11.1,0.8971
 18067,Howard County,Indiana,11.1,0.4815
 20099,Labette County,Kansas,11.1,0.6392
 21193,Perry County,Kentucky,11.1,0.9051
@@ -2865,11 +2863,11 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 51700,Newport News City,Virginia,11.1,0.8156
 54091,Taylor County,West Virginia,11.1,0.4949
 54109,Wyoming County,West Virginia,11.1,0.6443
-01023,Choctaw County,Alabama,11.2,0.8748
-01035,Conecuh County,Alabama,11.2,0.8086
-01131,Wilcox County,Alabama,11.2,0.928
-05003,Ashley County,Arkansas,11.2,0.8576
-06071,San Bernardino County,California,11.2,0.901
+1023,Choctaw County,Alabama,11.2,0.8748
+1035,Conecuh County,Alabama,11.2,0.8086
+1131,Wilcox County,Alabama,11.2,0.928
+5003,Ashley County,Arkansas,11.2,0.8576
+6071,San Bernardino County,California,11.2,0.901
 13019,Berrien County,Georgia,11.2,0.85
 16027,Canyon County,Idaho,11.2,0.7366
 18095,Madison County,Indiana,11.2,0.6713
@@ -2882,7 +2880,7 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 48409,San Patricio County,Texas,11.2,0.8309
 51083,Halifax County,Virginia,11.2,0.6723
 51650,Hampton City,Virginia,11.2,0.6675
-01119,Sumter County,Alabama,11.3,0.9557
+1119,Sumter County,Alabama,11.3,0.9557
 20177,Shawnee County,Kansas,11.3,0.5099
 22001,Acadia Parish,Louisiana,11.3,0.9182
 24033,Prince George&#39;s County,Maryland,11.3,0.6261
@@ -2898,7 +2896,7 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 54051,Marshall County,West Virginia,11.3,0.2153
 54067,Nicholas County,West Virginia,11.3,0.5411
 54099,Wayne County,West Virginia,11.3,0.6006
-05093,Mississippi County,Arkansas,11.4,0.9554
+5093,Mississippi County,Arkansas,11.4,0.9554
 10001,Kent County,Delaware,11.4,0.7268
 13277,Tift County,Georgia,11.4,0.8809
 13313,Whitfield County,Georgia,11.4,0.8793
@@ -2926,9 +2924,9 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 47019,Carter County,Tennessee,11.5,0.6153
 48373,Polk County,Texas,11.5,0.9121
 54043,Lincoln County,West Virginia,11.5,0.6057
-01045,Dale County,Alabama,11.6,0.7599
-01055,Etowah County,Alabama,11.6,0.6564
-04027,Yuma County,Arizona,11.6,0.9895
+1045,Dale County,Alabama,11.6,0.7599
+1055,Etowah County,Alabama,11.6,0.6564
+4027,Yuma County,Arizona,11.6,0.9895
 13033,Burke County,Georgia,11.6,0.8455
 17163,St. Clair County,Illinois,11.6,0.5229
 21071,Floyd County,Kentucky,11.6,0.8503
@@ -2964,8 +2962,8 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 45015,Berkeley County,South Carolina,11.8,0.5146
 45021,Cherokee County,South Carolina,11.8,0.6978
 54079,Putnam County,West Virginia,11.8,0.0408
-02016,Aleutians West Census Area,Alaska,11.9,0.4927
-05107,Phillips County,Arkansas,11.9,0.9239
+2016,Aleutians West Census Area,Alaska,11.9,0.4927
+5107,Phillips County,Arkansas,11.9,0.9239
 18167,Vigo County,Indiana,11.9,0.7274
 20103,Leavenworth County,Kansas,11.9,0.2404
 24039,Somerset County,Maryland,11.9,0.8978
@@ -2973,8 +2971,8 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 48323,Maverick County,Texas,11.9,0.9742
 48361,Orange County,Texas,11.9,0.5812
 54107,Wood County,West Virginia,11.9,0.3723
-01015,Calhoun County,Alabama,12,0.8252
-01073,Jefferson County,Alabama,12,0.6621
+1015,Calhoun County,Alabama,12,0.8252
+1073,Jefferson County,Alabama,12,0.6621
 22101,St. Mary Parish,Louisiana,12,0.9162
 29007,Audrain County,Missouri,12,0.615
 45031,Darlington County,South Carolina,12,0.9268
@@ -2998,7 +2996,7 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 45069,Marlboro County,South Carolina,12.2,0.9869
 48061,Cameron County,Texas,12.2,0.9758
 54039,Kanawha County,West Virginia,12.2,0.5656
-01047,Dallas County,Alabama,12.3,0.949
+1047,Dallas County,Alabama,12.3,0.949
 36073,Orleans County,New York,12.3,0.643
 46031,Corson County,South Dakota,12.3,0.8395
 49037,San Juan County,Utah,12.3,0.9752
@@ -3006,12 +3004,12 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 37165,Scotland County,North Carolina,12.4,0.9936
 45047,Greenwood County,South Carolina,12.4,0.9344
 54001,Barbour County,West Virginia,12.4,0.6513
-01125,Tuscaloosa County,Alabama,12.5,0.6255
+1125,Tuscaloosa County,Alabama,12.5,0.6255
 36033,Franklin County,New York,12.5,0.7073
 39163,Vinton County,Ohio,12.5,0.7229
-04001,Apache County,Arizona,12.6,0.9885
-05069,Jefferson County,Arkansas,12.6,0.9436
-05123,St. Francis County,Arkansas,12.6,0.9691
+4001,Apache County,Arizona,12.6,0.9885
+5069,Jefferson County,Arkansas,12.6,0.9436
+5123,St. Francis County,Arkansas,12.6,0.9691
 28083,Leflore County,Mississippi,12.6,0.9653
 29207,Stoddard County,Missouri,12.6,0.4643
 51143,Pittsylvania County,Virginia,12.6,0.6427
@@ -3023,7 +3021,7 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 28151,Washington County,Mississippi,12.8,0.9783
 40031,Comanche County,Oklahoma,12.8,0.8354
 47113,Madison County,Tennessee,12.8,0.7124
-05055,Greene County,Arkansas,12.9,0.5834
+5055,Greene County,Arkansas,12.9,0.5834
 13185,Lowndes County,Georgia,12.9,0.8662
 21047,Christian County,Kentucky,12.9,0.9127
 28067,Jones County,Mississippi,12.9,0.892
@@ -3042,7 +3040,7 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 22109,Terrebonne Parish,Louisiana,13.2,0.8952
 28113,Pike County,Mississippi,13.2,0.9882
 45041,Florence County,South Carolina,13.2,0.8987
-01097,Mobile County,Alabama,13.3,0.7532
+1097,Mobile County,Alabama,13.3,0.7532
 13175,Laurens County,Georgia,13.3,0.8013
 18109,Morgan County,Indiana,13.3,0.2156
 22079,Rapides Parish,Louisiana,13.3,0.9086
@@ -3070,11 +3068,11 @@ County_FIPS,County,State,Diagnosed Diabetes-2021-Percentage,Overall SVI-2018-Per
 28123,Scott County,Mississippi,14.6,0.985
 35031,Mckinley County,New Mexico,14.9,0.9889
 46137,Ziebach County,South Dakota,14.9,0.9538
-01101,Montgomery County,Alabama,15,0.8427
+1101,Montgomery County,Alabama,15,0.8427
 38079,Rolette County,North Dakota,15,0.907
 46102,Oglala Lakota County,South Dakota,15.4,0.9943
 28051,Holmes County,Mississippi,15.5,0.9818
 51740,Portsmouth City,Virginia,16.8,0.8006
 45089,Williamsburg County,South Carolina,17.5,0.9704
 46121,Todd County,South Dakota,17.9,0.9564
-US Diabetes Surveillance System; www.cdc.gov/diabetes/data; Division of Diabetes Translation - Centers for Disease Control and Prevention.
+US Diabetes Surveillance System; www.cdc.gov/diabetes/data; Division of Diabetes Translation - Centers for Disease Control and Prevention.,,,,
