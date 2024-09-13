@@ -1,0 +1,9 @@
+Title: Class Survey Analysis
+Description_Project: Clean and analyze a survey conducted among the Fall 2024 Advanced Data Analysis Class members at the Brown School of Public Health.
+Decription_Code: To run the analysis and reproduce the results, you'll need the following software and packages: 
+	R (4.4.1 or higher)
+	RStudio (2024.04.2-764 or higher) or any other IDE supporting R Markdown
+	'haven'
+	'readr'
+	'dplyr'
+
