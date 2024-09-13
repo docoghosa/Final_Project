@@ -1,9 +1,26 @@
-Title: Class Survey Analysis
-Description_Project: Clean and analyze a survey conducted among the Fall 2024 Advanced Data Analysis Class members at the Brown School of Public Health.
-Decription_Code: To run the analysis and reproduce the results, you'll need the following software and packages: 
+Title: 
+Class Survey Analysis
+Description_Project: 
+Clean and analyze a survey conducted among the Fall 2024 Advanced Data Analysis Class members at the Brown School of Public Health.
+Decription_Code: 
+To run the analysis and reproduce the results, you'll need the following software and packages: 
 	R (4.4.1 or higher)
 	RStudio (2024.04.2-764 or higher) or any other IDE supporting R Markdown
 	'haven'
 	'readr'
 	'dplyr'
-
+Load necessary packages using the library function and 'pacman::p_load()' to enable file processing
+Import the dataset from the Github site (https://github.com/kijohnson/ADA-2024) and call the data frame using the 'read_csv()' function
+Use the 'dim()' function to show the dimensions of the data frame 
+Change the names of the columns by using the 'names()' function then show the names using the 'colnames() function'
+Determine the class that the variables belong to by using the 'sapply()' function - the first argument is the dataset, and the second argument is the request type
+Count the number of observations in each class type using the 'table()' function
+To summarize or highlight the elements of a variable, use the 'summary()' function and add the '$' sign at the end of the dataset followed by the variable name.
+Check for unique values in the dataset using the 'unique()' function
+Force/coerce non-numeric entries in an otherwise or intended numeric variable to 'NA' (not applicable) using the 'as.numeric()' function. Then show the structure of your dataframe using the 'str()' function
+'useNA ="ifany"' shows the instances where non-meric entries were made in the variable
+Use the pipe function '%>%' to move the output of one function into another
+The 'mutate()' function creates a new variable; include the 'case_when' function to the syntax to specify instances
+To generate the margin sums, use the 'addmargins()' function
+Description_Dataset:
+The dataset is a csv file
