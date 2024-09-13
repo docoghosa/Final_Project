@@ -1,7 +1,9 @@
 Title: 
 Class Survey Analysis
+
 Description_Project: 
 Clean and analyze a survey conducted among the Fall 2024 Advanced Data Analysis Class members at the Brown School of Public Health.
+
 Decription_Code: 
 To run the analysis and reproduce the results, you'll need the following software and packages: 
 	R (4.4.1 or higher)
@@ -22,5 +24,52 @@ Force/coerce non-numeric entries in an otherwise or intended numeric variable to
 Use the pipe function '%>%' to move the output of one function into another
 The 'mutate()' function creates a new variable; include the 'case_when' function to the syntax to specify instances
 To generate the margin sums, use the 'addmargins()' function
+
 Description_Dataset:
-The dataset is a csv file
+Overview
+The dataset, 'Class 1 Survey Fall 2024_di.csv', contains responses from a survey conducted among the Fall 2024 Advanced Data Analysis Class members at the Brown School of Public Health. The survey was designed to gather information about the students' backgrounds, experiences, and perspectives on various topics related to public health and data analysis.
+
+Data Collection
+Source: 
+The data was collected via an online survey distributed to all class members in August 2024.
+Respondents: 
+The dataset includes responses from 29 students enrolled in the course.
+
+Survey Questions: 
+The survey covered questions on pet preference, demographics, statistical software preference, technical skills, class aspirations, and public health area interest.
+
+Data Fields:
+The dataset consists of the following columns:
+ID: numeric - A unique identifier for each respondent (1...29)
+cats: Character - Do respondents like cats? (Yes, No, Ambivalent)
+dogs: Character - Do respondents like dogs? (Yes, No, Ambivalent)
+item: Character - Item respondents want to have if stranded on a desert island (free text)
+slogan: character - Respondents' life slogan (free text)
+day: character - Respondents' favorite day of the week (free text)
+LOH: character - Respondents' peak productivity time (Owl (I am a night person), Lark ( I am a morning person), Hummingbird (I am neither a lark nor an owl))
+food: character - Respondents' favorite food (free text)
+drink: character - Respondents' favorite drink (free text)
+season: character - Respondents' favorite season (Spring, Winter, Summer, Fall)
+month: character - Respondents' favorite month (January...December)
+hobby: character - Respondents' hobby (free text)
+degree: character - Respondents' degree program (MPH Only, MSW/MPH, MSW Only, Other)
+specialization: character - Respondents' course specialization (Epidemiology/Biostatistics, Global Health, Urban design, Generalist, Health Policy Analysis, Other)
+software: character - Respondents' primary statistical software preference (Excel, SPSS, Stata, SAS, R, Other)
+Rx: numeric - Respondents' level of R experience (1=none, 5=advanced)
+coding: numeric - Respondents' comfort level with coding (1=not comfortable...5=Very comfortable)
+duration: character - Respondents' coding experience in months/years (0-3 months...>2 years)
+learn: character - Three things respondents hope to learn in the course (free text)
+interest: character - Respondents' public health area of interest (free text)
+number: numeric - Respondents' favorite number (free text)
+bday: numeric - Respondents' birthday (free text - number)
+bmonth: numeric - Respondents' birth month (free text - number)
+country: character - Respondents' home country (free text)
+state: character - Respondents' home state (free text)
+city: character - Respondents' home city (free text)
+LOE: character - Respondents' level of education (<High School...Doctoral...Other)
+
+Data Characteristics
+Rows: 29 Observations (One per respondent)
+Columns: 27 Variables, as detailed above
+Missing Values: Some numeric fields contained non-numeric entries. These are represented as NA
+Data Format: The dataset is provided in CSV format, which is compatible with various data analysis tools and software.
