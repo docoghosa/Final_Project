@@ -2,7 +2,7 @@ Title:
 Class Survey Analysis
 
 Description_Project: 
-Clean and analyze a survey conducted among the Fall 2024 Advanced Data Analysis Class members at the Brown School of Public Health.
+An analysis of a survey conducted among the Fall 2024 Advanced Data Analysis Class members at the Brown School of Public Health.
 
 Decription_Code: 
 To run the analysis and reproduce the results, you'll need the following software and packages: 
@@ -31,7 +31,7 @@ The dataset, 'Class 1 Survey Fall 2024_di.csv', contains responses from a survey
 
 Data Collection
 Source: 
-The data was collected via an online survey distributed to all class members in August 2024.
+The data was collected via an online survey (Google Forms link) distributed to all class members in August 2024.
 Respondents: 
 The dataset includes responses from 29 students enrolled in the course.
 
