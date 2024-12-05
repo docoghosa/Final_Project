@@ -1,0 +1,422 @@
+---
+title: "Final Project"
+author: "Oghosa"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+library(haven) 
+library(readr) 
+library(dplyr) 
+library(tableone)
+pacman::p_load(haven, readr, dplyr, tidyverse, table1, DiagrammeR, rsvg, DiagrammeRsvg, readxl, tableone)
+```
+
+```{r}
+#Study Objectives: a) Assess the relationship between physical activity and the likelihood of reporting excellent general health among individuals aged 30 and above. b) Evaluate whether BMI and age act as confounding factors in the relationship between physical activity and excellent general health.
+
+# This study will utilize data from the 2023 Behavioral Risk Factor Surveillance System (BRFSS). 
+
+#Load dataset
+fp <- read_xpt("D:\\ADA\\Final Project\\LLCP2023XPT\\LLCP2023.XPT")
+```
+
+```{r}
+#Check data in age variable
+table(fp$`_AGEG5YR`, useNA = "ifany")
+```
+
+```{r}
+#From the data dictionary, age category '14' represents "Don't know/Refused/Missing". We remove this since it does not contribute to our analysis
+fp1 <- fp %>%
+  filter(`_AGEG5YR` != 14)
+```
+
+```{r}
+#Recheck data in age variable to ensure '14' has been filtered out
+table(fp1$`_AGEG5YR`, useNA = "ifany")
+```
+
+```{r}
+#Recode the various age groups to match labels in the data dictionary
+fp2 <- fp1 %>%
+  mutate(Age_Group = case_when(
+    `_AGEG5YR` == 1 ~ "18-24",
+    `_AGEG5YR` == 2 ~ "25-29",
+    `_AGEG5YR` == 3 ~ "30-34",
+    `_AGEG5YR` == 4 ~ "35-39",
+    `_AGEG5YR` == 5 ~ "40-44",
+    `_AGEG5YR` == 6 ~ "45-49",
+    `_AGEG5YR` == 7 ~ "50-54",
+    `_AGEG5YR` == 8 ~ "55-59",
+    `_AGEG5YR` == 9 ~ "60-64",
+    `_AGEG5YR` == 10 ~ "65-69",
+    `_AGEG5YR` == 11 ~ "70-74",
+    `_AGEG5YR` == 12 ~ "75-79",
+    `_AGEG5YR` == 13 ~ "80 or older"
+  ))
+```
+
+```{r}
+#Check to ensure transformation was successful
+table(fp2$Age_Group, useNA = "ifany")
+```
+
+```{r}
+#Filter out age categories that are less than 30 since my research question is focused on individuals that are aged 30 and above
+fp3 <- fp2 %>%
+  filter(Age_Group >= 30)
+```
+
+```{r}
+# Recode BMI categories
+
+fp3 <- fp3 %>%
+  mutate(BMI_category = case_when(
+    `_BMI5CAT` == 1 ~ "Underweight",
+    `_BMI5CAT` == 2 ~ "Normal",
+    `_BMI5CAT` == 3 ~ "Overweight",
+    `_BMI5CAT` == 4 ~ "Obese"
+  ))
+
+# Recode BMI categories. 
+#Ignore entries that do not contribute to our analysis (refused, not asked/missing, don't know or not sure)
+
+fp3 <- fp3 %>%
+  mutate(Physical_Activity = case_when(
+    EXEROFT1 >= 101 & EXEROFT1 <= 199 ~ "Times per week",
+    EXEROFT1 >= 201 & EXEROFT1 <= 299 ~ "Times per month",
+  ))
+```
+
+```{r}
+#Check if properly recoded
+table(fp3$BMI_category, useNA = "ifany")
+table(fp3$Physical_Activity, useNA = "ifany")
+```
+
+```{r}
+# Remove rows with missing values in BMI_category and Physical_Activity
+fp4 <- fp3 %>%
+  filter(!is.na(BMI_category), !is.na(Physical_Activity))
+
+```
+
+```{r}
+#Check if removal of missing values was successful
+table(fp4$BMI_category, useNA = "ifany")
+table(fp4$Physical_Activity, useNA = "ifany")
+```
+
+```{r}
+#Re-coding General health status and creating a binary variable of health status while removing missing values and instances like refused, not sure, don't know, etc. per the dictionary
+fp5 <- fp4 %>%
+  mutate(GENHLTH_binary = case_when(
+    GENHLTH == 1 ~ 1,   # Excellent health status
+    GENHLTH %in% c(2, 3, 4, 5) ~ 0   # Very good, Good, Fair, Poor
+  )) %>%
+  filter(!is.na(GENHLTH), !GENHLTH %in% c(7, 9))  # Remove rows with 7, 9, or NA
+```
+
+```{r}
+#Checking the tables for correct output
+table(fp5$Physical_Activity, useNA = "ifany")
+table(fp5$GENHLTH_binary, useNA = "ifany")
+```
+
+```{r}
+# Summarize each variable individually
+age_group_table <- fp5 %>%
+  count(Age_Group) %>%
+  mutate(
+    Variable = "Age_Group",
+    Proportion = paste0(round(100 * n / sum(n), 1), "%")
+  ) %>%
+  rename(Level = Age_Group, Count = n)
+
+bmi_category_table <- fp5 %>%
+  count(BMI_category) %>%
+  mutate(
+    Variable = "BMI_category",
+    Proportion = paste0(round(100 * n / sum(n), 1), "%")
+  ) %>%
+  rename(Level = BMI_category, Count = n)
+
+genhlth_binary_table <- fp5 %>%
+  count(GENHLTH_binary) %>%
+  mutate(
+    Variable = "GENHLTH_binary",
+    Proportion = paste0(round(100 * n / sum(n), 1), "%")
+  ) %>%
+  rename(Level = GENHLTH_binary, Count = n)
+
+physical_activity_table <- fp5 %>%
+  count(Physical_Activity) %>%
+  mutate(
+    Variable = "Physical_Activity",
+    Proportion = paste0(round(100 * n / sum(n), 1), "%")
+  ) %>%
+  rename(Level = Physical_Activity, Count = n)
+
+# Combine the individual tables using rbind()
+table_combined <- rbind(
+  age_group_table,
+  bmi_category_table,
+  genhlth_binary_table,
+  physical_activity_table
+)
+
+# Reorder columns to Variable | Level | Count | Proportion
+table_combined <- table_combined %>%
+  select(Variable, Level, Count, Proportion)
+
+# Print the final table to check outcome
+print(table_combined, n = Inf)
+
+```
+
+```{r}
+#Export output as csv file named Table1
+write.csv(table_combined, "Table1.csv", row.names = FALSE)
+```
+
+```{r}
+#Output the final sample selection process
+flowchart <- grViz(diagram = "digraph flowchart{ # gives beginning of flowchart
+
+      node [fontname = Calibri, shape = rectangle, fontsize=10] 
+      
+      node1 [label = '@@1']
+      node2 [label = '@@2'] 
+      node3 [label = '@@3'] 
+      node4 [label = '@@4'] 
+      node5 [label = '@@5'] 
+
+      node1 -> node2 -> node3 -> node4 -> node5
+}
+      [1]: 'Initial records from BRFSS n = 433,323'
+      [2]: 'Excluding 7,779 individuals with age entries: \\n Do not know/Refused/Missing n = 425,544'
+      [3]: 'Excluding 47,527 individuals in age categories \\n that are < 30 n = 378,017'
+      [4]: 'Excluding 126,402 individuals with no entries \\n in BMI Category and Physical Activity n = 251,615'
+      [5]: 'Excluding 446 individuals with entries in their \\n general health status that include Refused, Not sure, Do not know n = 251,169'
+      ")
+
+flowchart
+```
+
+```{r}
+#Export the flkowchart as a png file named flowchart_large with the dimensions as shown
+export_svg(flowchart) %>% 
+  charToRaw() %>% 
+  rsvg_png("flowchart_large.png", width = 1600, height = 1400)
+```
+
+
+```{r}
+library(broom)
+#Simple logistic regression model to assess the association between physical activity and self-reported excellent health status.
+
+model_a <- glm(GENHLTH_binary ~ Physical_Activity, 
+               data = fp5, 
+               family = binomial)
+
+summary(model_a)
+
+odds_ratio <- exp(coef(model_a))
+confint_odds <- exp(confint(model_a))  
+
+results <- data.frame(
+  Term = names(coef(model_a)),
+  Estimate = coef(model_a),
+  Odds_Ratio = odds_ratio,
+  CI_Lower = confint_odds[, 1],
+  CI_Upper = confint_odds[, 2],
+  P_Value = coef(summary(model_a))[, "Pr(>|z|)"]
+)
+
+results
+
+```
+Individuals who engaged in physical activity "times per week" had 1.22 times higher odds of reporting excellent health compared to those who engaged in physical activity "times per month."
+
+```{r}
+# Including BMI category and age group as covariates to adjust for their potential confounding effects.
+model_b <- glm(GENHLTH_binary ~ Physical_Activity + BMI_category + Age_Group,
+               data = fp5,
+               family = binomial)
+
+model_summary <- summary(model_b)
+
+output_table <- data.frame(
+  Term = rownames(model_summary$coefficients),
+  Estimate = model_summary$coefficients[, "Estimate"],
+  Odds = exp(model_summary$coefficients[, "Estimate"]), 
+  PercentageChange = (exp(model_summary$coefficients[, "Estimate"]) - 1) * 100, 
+  StdError = model_summary$coefficients[, "Std. Error"],
+  ZValue = model_summary$coefficients[, "z value"],
+  PValue = model_summary$coefficients[, "Pr(>|z|)"]
+
+)
+
+# Saving the table to a CSV file
+write.csv(output_table, "model_b_output.csv", row.names = FALSE)
+
+output_table
+```
+
+```{r}
+#Logistic regression with interaction to check for effect modification with BMI and age
+model_bmi <- glm(GENHLTH_binary ~ Physical_Activity * BMI_category, 
+                 data = fp5, family = binomial)
+
+model_age <- glm(GENHLTH_binary ~ Physical_Activity * Age_Group, 
+                 data = fp5, family = binomial)
+
+
+```
+
+```{r}
+#Logistic regression model to assess the combined effects of physical activity, BMI, and age group
+
+model_combined <- glm(GENHLTH_binary ~ Physical_Activity * BMI_category + Physical_Activity * Age_Group,
+                      data = fp5,
+                      family = binomial)
+
+model_summary <- summary(model_combined)
+
+conf_intervals <- confint(model_combined)
+
+output_table <- data.frame(
+  Term = rownames(model_summary$coefficients),
+  Estimate = model_summary$coefficients[, "Estimate"],
+  Odds = exp(model_summary$coefficients[, "Estimate"]),  
+  CI_Lower = exp(conf_intervals[, 1]),  
+  CI_Upper = exp(conf_intervals[, 2]),  
+  PercentageChange = (exp(model_summary$coefficients[, "Estimate"]) - 1) * 100,  
+  StdError = model_summary$coefficients[, "Std. Error"],
+  ZValue = model_summary$coefficients[, "z value"],
+  PValue = model_summary$coefficients[, "Pr(>|z|)"]
+)
+
+print(output_table)
+
+write.csv(output_table, "model_combined_output_with_CI.csv", row.names = FALSE)
+
+
+```
+
+```{r}
+#Compaing the AICs to determine the best model fit
+anova(model_bmi, model_combined, test = "LRT")
+AIC(model_bmi, model_combined)
+```
+
+```{r}
+if (!require(car)) install.packages("car")
+library(car)
+
+# Checking chosen model for multicollinearity with VIF
+vif_values <- vif(model_combined)
+
+vif_values
+```
+Interpretation: There is no multicollinearity
+
+```{r}
+
+if (!require("lmtest")) install.packages("lmtest")
+library(lmtest)
+
+# Performing the Breusch-Pagan test on the model for heteroscadastiity
+bp_test <- bptest(model_b)
+bp_test
+
+```
+Interpretation: There was statistically significant heteroscedasticity in the model.
+
+```{r}
+#Checking for linearity assumption in the logistic regression model using a residuals vs fitted values plot
+
+plot(model_combined$fitted.values, residuals(model_combined), 
+     xlab = "Fitted Values", ylab = "Residuals",
+     main = "Residuals vs Fitted")
+abline(h = 0, col = "red")
+
+```
+Interpretation: The choice model violates the linearity assumption.
+
+```{r}
+# Checking for model fit using the Hosmer-Lemeshow goodness-of-fit test
+
+install.packages("ResourceSelection") #I had not previously installed this package
+
+library(ResourceSelection)
+
+hoslem.test(model_combined$y, fitted(model_combined), g = 10) 
+
+```
+#The statistically significant HLtest shows the poor model fit.
+
+```{r}
+# Recode Physical Activity into 1 and 2
+fp5$Physical_Activity_Cat <- ifelse(fp5$Physical_Activity == "Times per week", 1,
+                                    ifelse(fp5$Physical_Activity == "Times per month", 2, NA))
+
+# Apply a log transform to the categorical variable
+fp5$log_Physical_Activity_Cat <- log(fp5$Physical_Activity_Cat + 1)
+
+# Updating the model with the new transformed variable
+model_combined_log <- glm(
+  GENHLTH_binary ~ log_Physical_Activity_Cat + BMI_category + Age_Group +
+  log_Physical_Activity_Cat * BMI_category + log_Physical_Activity_Cat * Age_Group,
+  data = fp5,
+  family = binomial
+)
+
+summary(model_combined_log)
+
+```
+
+```{r}
+#Rechecking for heteroscedasticity in the log-transformed model
+
+bp_test <- bptest(model_combined_log) 
+bp_test
+```
+Interpretation: The heteroscedasticity persists despite the log transformation. Hence, the heteroscedasticity likely arose from factors unrelated to the scale of the variables.
+
+```{r}
+# Predict probabilities
+fp5$predicted_prob <- predict(model_combined, type = "response")
+
+```
+
+```{r}
+library(ggplot2)
+
+# Cleaned plot with better facet layout and spacing
+ggplot(fp5, aes(x = Physical_Activity, y = predicted_prob, color = BMI_category)) +
+  geom_point(alpha = 0.6) +  # Adjust transparency for clarity
+  geom_smooth(method = "loess", se = FALSE, linewidth = 0.8) +  # Thinner smooth lines
+  facet_wrap(~ Age_Group, nrow = 3, scales = "free_y") +  # Fewer rows for better spacing
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +  # Wrap long x-axis labels
+  labs(
+    title = "Combined Interaction: Physical Activity, BMI, and Age Group",
+    x = "Physical Activity",
+    y = "Predicted Probability of Excellent Health",
+    color = "BMI Category"
+  ) +
+  theme_minimal() +
+  theme(
+    strip.text = element_text(size = 10, face = "bold"),  # Larger facet labels
+    axis.text.x = element_text(angle = 45, hjust = 1),   # Rotate x-axis text for clarity
+    legend.position = "bottom"                           # Move legend to the bottom
+  )
+```
+
+```{r}
+#Exporting the faceted scatterplot as a png file
+ggsave("interaction_plot.jpeg", plot = last_plot(), width = 10, height = 8, dpi = 300)
+
+```
