@@ -16,7 +16,7 @@ pacman::p_load(haven, readr, dplyr, tidyverse, table1, DiagrammeR, rsvg, Diagram
 ```{r}
 #Study Objectives: a) Assess the relationship between physical activity and the likelihood of reporting excellent general health among individuals aged 30 and above. b) Evaluate whether BMI and age act as confounding factors in the relationship between physical activity and excellent general health.
 
-# This study will utilize data from the 2023 Behavioral Risk Factor Surveillance System (BRFSS). 
+# This study will utilize data from the 2023 Behavioral Risk Factor Surveillance System (BRFSS) released September 10, 2024. 
 
 #Load dataset
 fp <- read_xpt("D:\\ADA\\Final Project\\LLCP2023XPT\\LLCP2023.XPT")
