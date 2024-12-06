@@ -10,13 +10,19 @@ library(haven)
 library(readr) 
 library(dplyr) 
 library(tableone)
-pacman::p_load(haven, readr, dplyr, tidyverse, table1, DiagrammeR, rsvg, DiagrammeRsvg, readxl, tableone)
+library(ResourceSelection)
+library(lmtest)
+library(car)
+library(ggplot2)
+library(broom)
+
+pacman::p_load(haven, readr, dplyr, tidyverse, table1, DiagrammeR, rsvg, DiagrammeRsvg, readxl, tableone, ResourceSelection, lmtest, car)
 ```
 
 ```{r}
 #Study Objectives: a) Assess the relationship between physical activity and the likelihood of reporting excellent general health among individuals aged 30 and above. b) Evaluate whether BMI and age act as confounding factors in the relationship between physical activity and excellent general health.
 
-# This study will utilize data from the 2023 Behavioral Risk Factor Surveillance System (BRFSS) released September 10, 2024. 
+# This study will utilize data from the 2023 Behavioral Risk Factor Surveillance System (BRFSS). 
 
 #Load dataset
 fp <- read_xpt("D:\\ADA\\Final Project\\LLCP2023XPT\\LLCP2023.XPT")
@@ -214,7 +220,6 @@ export_svg(flowchart) %>%
 
 
 ```{r}
-library(broom)
 #Simple logistic regression model to assess the association between physical activity and self-reported excellent health status.
 
 model_a <- glm(GENHLTH_binary ~ Physical_Activity, 
@@ -313,9 +318,6 @@ AIC(model_bmi, model_combined)
 ```
 
 ```{r}
-if (!require(car)) install.packages("car")
-library(car)
-
 # Checking chosen model for multicollinearity with VIF
 vif_values <- vif(model_combined)
 
@@ -324,10 +326,6 @@ vif_values
 Interpretation: There is no multicollinearity
 
 ```{r}
-
-if (!require("lmtest")) install.packages("lmtest")
-library(lmtest)
-
 # Performing the Breusch-Pagan test on the model for heteroscadastiity
 bp_test <- bptest(model_b)
 bp_test
@@ -348,10 +346,6 @@ Interpretation: The choice model violates the linearity assumption.
 
 ```{r}
 # Checking for model fit using the Hosmer-Lemeshow goodness-of-fit test
-
-install.packages("ResourceSelection") #I had not previously installed this package
-
-library(ResourceSelection)
 
 hoslem.test(model_combined$y, fitted(model_combined), g = 10) 
 
@@ -393,14 +387,12 @@ fp5$predicted_prob <- predict(model_combined, type = "response")
 ```
 
 ```{r}
-library(ggplot2)
-
-# Cleaned plot with better facet layout and spacing
+# Faceted scatterplot to visualize output
 ggplot(fp5, aes(x = Physical_Activity, y = predicted_prob, color = BMI_category)) +
-  geom_point(alpha = 0.6) +  # Adjust transparency for clarity
-  geom_smooth(method = "loess", se = FALSE, linewidth = 0.8) +  # Thinner smooth lines
-  facet_wrap(~ Age_Group, nrow = 3, scales = "free_y") +  # Fewer rows for better spacing
-  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +  # Wrap long x-axis labels
+  geom_point(alpha = 0.6) + 
+  geom_smooth(method = "loess", se = FALSE, linewidth = 0.8) +
+  facet_wrap(~ Age_Group, nrow = 3, scales = "free_y") +  
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
   labs(
     title = "Combined Interaction: Physical Activity, BMI, and Age Group",
     x = "Physical Activity",
@@ -409,9 +401,9 @@ ggplot(fp5, aes(x = Physical_Activity, y = predicted_prob, color = BMI_category)
   ) +
   theme_minimal() +
   theme(
-    strip.text = element_text(size = 10, face = "bold"),  # Larger facet labels
-    axis.text.x = element_text(angle = 45, hjust = 1),   # Rotate x-axis text for clarity
-    legend.position = "bottom"                           # Move legend to the bottom
+    strip.text = element_text(size = 10, face = "bold"),  
+    axis.text.x = element_text(angle = 45, hjust = 1),  
+    legend.position = "bottom"                           
   )
 ```
 
