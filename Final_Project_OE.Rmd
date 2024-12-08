@@ -86,7 +86,6 @@ fp3 <- fp3 %>%
     `_BMI5CAT` == 4 ~ "Obese"
   ))
 
-# Recode BMI categories. 
 #Ignore entries that do not contribute to our analysis (refused, not asked/missing, don't know or not sure)
 
 fp3 <- fp3 %>%
@@ -110,7 +109,7 @@ fp4 <- fp3 %>%
 ```
 
 ```{r}
-#Check if removal of missing values was successful
+#Confirm removal of missing values was successful
 table(fp4$BMI_category, useNA = "ifany")
 table(fp4$Physical_Activity, useNA = "ifany")
 ```
@@ -212,7 +211,7 @@ flowchart
 ```
 
 ```{r}
-#Export the flkowchart as a png file named flowchart_large with the dimensions as shown
+#Export the flowchart as a png file named 'flowchart_large' with dimensions as shown
 export_svg(flowchart) %>% 
   charToRaw() %>% 
   rsvg_png("flowchart_large.png", width = 1600, height = 1400)
@@ -228,6 +227,7 @@ model_a <- glm(GENHLTH_binary ~ Physical_Activity,
 
 summary(model_a)
 
+#Display Odds Ratios and Confidence intervals
 odds_ratio <- exp(coef(model_a))
 confint_odds <- exp(confint(model_a))  
 
@@ -243,7 +243,7 @@ results <- data.frame(
 results
 
 ```
-Individuals who engaged in physical activity "times per week" had 1.22 times higher odds of reporting excellent health compared to those who engaged in physical activity "times per month."
+Individuals who engaged in frequent physical activity "times per week" had 1.22 times higher odds of reporting excellent health compared to those who engaged in less frequent physical activity "times per month."
 
 ```{r}
 # Including BMI category and age group as covariates to adjust for their potential confounding effects.
@@ -378,7 +378,7 @@ summary(model_combined_log)
 bp_test <- bptest(model_combined_log) 
 bp_test
 ```
-Interpretation: The heteroscedasticity persists despite the log transformation. Hence, the heteroscedasticity likely arose from factors unrelated to the scale of the variables.
+Interpretation: The heteroscedasticity persists despite the log transformation. Hence, the heteroscedasticity likely arose from factors unrelated to the scale of the variables (physicl activity).
 
 ```{r}
 # Predict probabilities
