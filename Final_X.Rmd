@@ -31,14 +31,14 @@ table(strep_tb$rad_num, strep_tb$radiologic_6m)
 ```{r}
 table(strep_tb$gender, useNA = 'always')
 
-#There are 48 males and 59 females in the original dataset.
+#There are 48 males and 59 females in the strep_tb dataset.
 
 ```
 
 # 10. Choose an appropriate model to model the association between arm (streptomycin vs. control) and rad_num as the dependent variable. a. Report the measure of association values or value and the 95% CI or CIs. b. Interpret the results.
 # 10. Choose an appropriate model to model the association between arm (streptomycin vs. control) and rad_num as the dependent variable.
 ```{r}
-#An Ordinal logistic regression model for the association between arm (streptomycin vs. control) and rad_num.
+#An ordinal logistic regression model for the association between arm (streptomycin vs. control) and rad_num.
 model_x <- polr(rad_num ~ arm, data=strep_tb)
 summary(model_x)
 
@@ -46,8 +46,8 @@ summary(model_x)
 #a. Report the measure of association values or value and the 95% CI or CIs. b. Interpret the results.
 ```{r}
 tidy(model_x, conf.int=TRUE, exponentiate = TRUE)
-
-# The odds of having "Moderate improvement" to "Considerable improvement" as a radiological outcome are 5.26 times (95% CI: 2.55–11.17) the odds of death to no change as outcome, for patients in the Streptomycin arm compared to patients in the Control arm. 
+# Odds Ratio 5.43 (95% CI: 2.64–11.54)
+# The odds of having "Moderate improvement" to "Considerable improvement" as a radiological outcome are 5.43 times (95% CI: 2.64–11.54) the odds of death to no change as outcome, for patients in the Streptomycin arm compared to patients in the Control arm. 
 
 ```
 
@@ -69,10 +69,6 @@ frm$cursmoke <- factor(frm$CURSMOKE, levels= c(0:1), labels = c("Not Current Smo
 ```
 
 # 11. Determine number of individuals for variables needed for this analysis (cursmoke, DIABETES, DEATH). Report the number of subjects who are a. current smokers, b. have diabetes, and c. who have died.
-```{r}
-colnames(frm)
-```
-
 ```{r}
 frm$diabetes <- factor(frm$DIABETES, levels= c(0:1), labels = c("No diabetes", "Diabetes"))
 frm$death <- factor(frm$DEATH, levels= c(0:1), labels = c("Alive", "Dead"))
@@ -116,6 +112,7 @@ survdiff(surv_obj ~ cursmoke, data=frm)
 HoD<-coxph(surv_obj ~ cursmoke, frm, ties="efron") 
 summary(HoD)
 
+# Hazard Ratio 1.22 (95% CI 1.1-1.346)
 # Interpretation: The hazard of death in those who are smokers at diagnosis is 1.22 (95% CI 1.1-1.346) times higher than those who are non-smokers at diagnosis.
 ```
 
@@ -124,6 +121,7 @@ summary(HoD)
 HoD_adj <- coxph(surv_obj ~ cursmoke + AGE, frm, ties="efron") 
 summary(HoD_adj)
 
+# Hazard Ratio 1.58 (95% CI 1.42-1.75)
 # Interpretation: The hazard of death in those who are smokers at diagnosis is 1.58 (95% CI 1.42-1.75) times higher than those who are non-smokers at diagnosis after adjusting for age.
 ```
 
@@ -132,8 +130,10 @@ summary(HoD_adj)
 HoD_adj_D <- coxph(surv_obj ~ cursmoke * DIABETES + AGE, frm, ties="efron") 
 summary(HoD_adj_D)
 
-# The hazard of death in current smokers is 1.64 (95% CI: 1.46–1.83) times higher  compared to non-current smokers, after adjusting for age and diabetes status. 
-# The presence of diabetes is associated with a hazard of death that is 2.12  times higher  compared to those without diabetes, adjusted for smoking status and age.
+# Hazard Ratio_Current Smoker 1.64 (95% CI: 1.46–1.83)
+# Hazard Ratio_Current Smoker x Diabetes 0.723 (95% CI: 0.53–0.99)
+# The hazard of death in current smokers is 1.64 (95% CI: 1.46–1.83) times higher compared to non-current smokers, after adjusting for age and diabetes status.
+# The presence of diabetes is associated with a hazard of death that is 0.723 (95% CI: 0.53–0.99) times lower compared to those without diabetes who are non-smokers, adjusted for age.
 ```
 
 # 18. If diabetes modifies the association, run age-adjusted models to report associations stratified by diabetes. a. Report the age-adjusted HRs and 95% CIs for each diabetes category and b. Interpret the results.
@@ -144,8 +144,10 @@ summary(with_diabetes)
 without_diabetes <- coxph(Surv(TIMEDTH, DEATH) ~ cursmoke + AGE, data = frm[frm$DIABETES == 0, ])
 summary(without_diabetes)
 
-# The hazard of death in current smokers with diabetes is 1.07 (95% CI: 0.79–1.45) times higher  compared to non-current smokers, after adjusting for age. 
-# The hazard of death in current smokers without diabetes is 1.66 (95% CI: 1.48–1.86) times higher  compared to non-current smokers, after adjusting for age. 
+# a1) HR_Diabetes (95% CI: 0.79–1.45)
+# a2) HR_without_Diabetes 1.66 (95% CI: 1.48–1.86)
+# b1) The hazard of death in current smokers with diabetes is 1.07 (95% CI: 0.79–1.45) times higher compared to non-current smokers, after adjusting for age.
+# b2) The hazard of death in current smokers without diabetes is 1.66 (95% CI: 1.48–1.86) times higher compared to non-current smokers, after adjusting for age.
 ```
 
 # 19. Evaluate the linearity assumption for the association between current smoking and death for the AGE variable. Interpret the results. Include in your interpretation how to address any violation if present.
@@ -182,8 +184,9 @@ ci_upper <- exp(coef_cursmoke + 1.96 * se_cursmoke)
 cat("HR for cursmoke among those without diabetes:", hr, "\n")
 cat("95% CI: (", ci_lower, ", ", ci_upper, ")\n")
 
-#The hazard of death in current smokers without diabetes is 1.64 (95% CI: 1.46–1.83) times higher compared to non-current smokers. 
 
+# a)HR for current smokers among those without diabetes: 1.63642 95% CI: ( 1.462543 - 1.83097 )
+# b) The hazard of death in current smokers without diabetes is 1.64 (95% CI: 1.46–1.83) times higher compared to non-current smokers.
 ```
 
 
