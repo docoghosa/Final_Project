@@ -86,6 +86,7 @@ fp3 <- fp3 %>%
     `_BMI5CAT` == 4 ~ "Obese"
   ))
 
+# Recode BMI categories. 
 #Ignore entries that do not contribute to our analysis (refused, not asked/missing, don't know or not sure)
 
 fp3 <- fp3 %>%
@@ -109,7 +110,7 @@ fp4 <- fp3 %>%
 ```
 
 ```{r}
-#Confirm removal of missing values was successful
+#Check if removal of missing values was successful
 table(fp4$BMI_category, useNA = "ifany")
 table(fp4$Physical_Activity, useNA = "ifany")
 ```
@@ -183,7 +184,7 @@ print(table_combined, n = Inf)
 
 ```{r}
 #Export output as csv file named Table1
-write.csv(table_combined, "Table1.csv", row.names = FALSE)
+#write.csv(table_combined, "Table1.csv", row.names = FALSE)
 ```
 
 ```{r}
@@ -211,12 +212,11 @@ flowchart
 ```
 
 ```{r}
-#Export the flowchart as a png file named 'flowchart_large' with dimensions as shown
-export_svg(flowchart) %>% 
-  charToRaw() %>% 
-  rsvg_png("flowchart_large.png", width = 1600, height = 1400)
+#Export the flkowchart as a png file named flowchart_large with the dimensions as shown
+#export_svg(flowchart) %>% 
+  #charToRaw() %>% 
+  #rsvg_png("flowchart_large.png", width = 1600, height = 1400)
 ```
-
 
 ```{r}
 #Simple logistic regression model to assess the association between physical activity and self-reported excellent health status.
@@ -227,7 +227,6 @@ model_a <- glm(GENHLTH_binary ~ Physical_Activity,
 
 summary(model_a)
 
-#Display Odds Ratios and Confidence intervals
 odds_ratio <- exp(coef(model_a))
 confint_odds <- exp(confint(model_a))  
 
@@ -243,7 +242,7 @@ results <- data.frame(
 results
 
 ```
-Individuals who engaged in frequent physical activity "times per week" had 1.22 times higher odds of reporting excellent health compared to those who engaged in less frequent physical activity "times per month."
+Individuals who engaged in physical activity "times per week" had 1.22 times higher odds of reporting excellent health compared to those who engaged in physical activity "times per month."
 
 ```{r}
 # Including BMI category and age group as covariates to adjust for their potential confounding effects.
@@ -253,6 +252,9 @@ model_b <- glm(GENHLTH_binary ~ Physical_Activity + BMI_category + Age_Group,
 
 model_summary <- summary(model_b)
 
+
+conf_int <- confint(model_b)
+
 output_table <- data.frame(
   Term = rownames(model_summary$coefficients),
   Estimate = model_summary$coefficients[, "Estimate"],
@@ -260,12 +262,14 @@ output_table <- data.frame(
   PercentageChange = (exp(model_summary$coefficients[, "Estimate"]) - 1) * 100, 
   StdError = model_summary$coefficients[, "Std. Error"],
   ZValue = model_summary$coefficients[, "z value"],
+  CI_Lower = exp(conf_int[, 1]),
+  CI_Upper = exp(conf_int[, 2]),
   PValue = model_summary$coefficients[, "Pr(>|z|)"]
 
 )
 
 # Saving the table to a CSV file
-write.csv(output_table, "model_b_output.csv", row.names = FALSE)
+#write.csv(output_table, "model_b_output.csv", row.names = FALSE)
 
 output_table
 ```
@@ -306,7 +310,7 @@ output_table <- data.frame(
 
 print(output_table)
 
-write.csv(output_table, "model_combined_output_with_CI.csv", row.names = FALSE)
+#write.csv(output_table, "model_combined_output_with_CI.csv", row.names = FALSE)
 
 
 ```
@@ -318,71 +322,51 @@ AIC(model_bmi, model_combined)
 ```
 
 ```{r}
+anova(model_b, model_combined, test = "LRT")
+AIC(model_b, model_combined)
+```
+
+
+```{r}
 # Checking chosen model for multicollinearity with VIF
-vif_values <- vif(model_combined)
+vif_values <- vif(model_b)
 
 vif_values
 ```
 Interpretation: There is no multicollinearity
 
-```{r}
-# Performing the Breusch-Pagan test on the model for heteroscadastiity
-bp_test <- bptest(model_b)
-bp_test
-
-```
-Interpretation: There was statistically significant heteroscedasticity in the model.
 
 ```{r}
-#Checking for linearity assumption in the logistic regression model using a residuals vs fitted values plot
+# Step 1: Calculate predicted probabilities
+predicted_probs <- predict(model_b, type = "response")
 
-plot(model_combined$fitted.values, residuals(model_combined), 
-     xlab = "Fitted Values", ylab = "Residuals",
-     main = "Residuals vs Fitted")
-abline(h = 0, col = "red")
+# Step 2: Create deciles for predicted probabilities
+decile_groups <- cut(predicted_probs, 
+                     breaks = quantile(predicted_probs, probs = seq(0, 1, 0.1)), 
+                     include.lowest = TRUE, 
+                     labels = FALSE)
 
-```
-Interpretation: The choice model violates the linearity assumption.
+# Step 3: Calculate observed proportions within each decile
+observed <- tapply(fp5$GENHLTH_binary, decile_groups, mean) # Replace GENHLTH_binary with your binary dependent variable
+predicted <- tapply(predicted_probs, decile_groups, mean)
 
-```{r}
-# Checking for model fit using the Hosmer-Lemeshow goodness-of-fit test
+# Step 4: Create the calibration plot
+plot(predicted, observed, 
+     xlim = c(0, 1), ylim = c(0, 1), 
+     xlab = "Predicted Probability", ylab = "Observed Proportion", 
+     main = "Calibration Plot", pch = 19, col = "blue")
+abline(0, 1, col = "red", lwd = 2) # Perfect calibration line
 
-hoslem.test(model_combined$y, fitted(model_combined), g = 10) 
-
-```
-#The statistically significant HLtest shows the poor model fit.
-
-```{r}
-# Recode Physical Activity into 1 and 2
-fp5$Physical_Activity_Cat <- ifelse(fp5$Physical_Activity == "Times per week", 1,
-                                    ifelse(fp5$Physical_Activity == "Times per month", 2, NA))
-
-# Apply a log transform to the categorical variable
-fp5$log_Physical_Activity_Cat <- log(fp5$Physical_Activity_Cat + 1)
-
-# Updating the model with the new transformed variable
-model_combined_log <- glm(
-  GENHLTH_binary ~ log_Physical_Activity_Cat + BMI_category + Age_Group +
-  log_Physical_Activity_Cat * BMI_category + log_Physical_Activity_Cat * Age_Group,
-  data = fp5,
-  family = binomial
-)
-
-summary(model_combined_log)
+# Step 5: Add a legend (optional)
+legend("topleft", legend = c("Observed", "Perfect Calibration"), 
+       col = c("blue", "red"), pch = c(19, NA), lty = c(NA, 1), lwd = c(NA, 2))
 
 ```
 
-```{r}
-#Rechecking for heteroscedasticity in the log-transformed model
-
-bp_test <- bptest(model_combined_log) 
-bp_test
-```
-Interpretation: The heteroscedasticity persists despite the log transformation. Hence, the heteroscedasticity likely arose from factors unrelated to the scale of the variables (physicl activity).
 
 ```{r}
 # Predict probabilities
-fp5$predicted_prob <- predict(model_combined, type = "response")
+fp5$predicted_prob <- predict(model_b, type = "response")
 
 ```
 
@@ -409,6 +393,6 @@ ggplot(fp5, aes(x = Physical_Activity, y = predicted_prob, color = BMI_category)
 
 ```{r}
 #Exporting the faceted scatterplot as a png file
-ggsave("interaction_plot.jpeg", plot = last_plot(), width = 10, height = 8, dpi = 300)
+#ggsave("interaction_plot.jpeg", plot = last_plot(), width = 10, height = 8, dpi = 300)
 
 ```
